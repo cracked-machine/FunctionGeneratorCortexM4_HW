@@ -10,6 +10,7 @@ A function generator powered by ARM Cortex M4
   - Square (toggled GPIO)
   - Triangle (DAC generator)
   - Sawtooth (DAC generator)
+  - Pulse
   - Random/WhiteNoise (DAC generator)
   
 - Output waveform MUX/switch to redirect output from MCU pins to Output BNC connector (if needed)

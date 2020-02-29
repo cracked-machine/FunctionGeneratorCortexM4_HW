@@ -22,7 +22,7 @@ A function generator powered by ARM Cortex M4
 
 - Output waveform gain/attenuation adjust (using rotary encoder) 
 
-- Redirect output to internal CORDIC digital filter
+- Redirect output to internal digital filter (FMAC)
 
 - Display to show active output waveform and attributes (frequency, DC bias, amplitude, relative gain)
 

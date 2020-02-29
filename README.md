@@ -20,7 +20,7 @@ A function generator powered by ARM Cortex M4
 
 - Output waveform DC bias adjust (using rotary encoder)
 
-- Output waveform gain/attenuation adjust (using rotary encoder)
+- Output waveform gain/attenuation adjust with ext. PGA (using rotary encoder) 
 
 - Redirect output to internal CORDIC digital filter
 

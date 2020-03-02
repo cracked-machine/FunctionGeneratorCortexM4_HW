@@ -1,0 +1,270 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L STM32G4:STM32G474RET U?
+U 1 1 5E601D7F
+P 5400 3850
+AR Path="/5E601D7F" Ref="U?"  Part="1" 
+AR Path="/5E5FDD07/5E601D7F" Ref="U?"  Part="1" 
+F 0 "U?" H 5375 6165 50  0000 C CNN
+F 1 "STM32G474RET" H 5375 6074 50  0000 C CNN
+F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 5400 4450 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/stm32g474re.pdf" H 5250 4450 50  0001 C CNN
+	1    5400 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 5450 6500 5450
+$Comp
+L Device:R R?
+U 1 1 5E6051B9
+P 7450 5450
+F 0 "R?" V 7243 5450 50  0000 C CNN
+F 1 "10K" V 7334 5450 50  0000 C CNN
+F 2 "" V 7380 5450 50  0001 C CNN
+F 3 "~" H 7450 5450 50  0001 C CNN
+	1    7450 5450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6700 5450 7300 5450
+$Comp
+L power:GNDS #PWR?
+U 1 1 5E605769
+P 7900 5700
+F 0 "#PWR?" H 7900 5450 50  0001 C CNN
+F 1 "GNDS" H 7905 5527 50  0000 C CNN
+F 2 "" H 7900 5700 50  0001 C CNN
+F 3 "" H 7900 5700 50  0001 C CNN
+	1    7900 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7900 5700 7900 5450
+Wire Wire Line
+	7900 5450 7600 5450
+Wire Wire Line
+	4600 3150 4150 3150
+Text Label 3250 3150 0    50   ~ 0
+T_SWDIO
+Wire Wire Line
+	3950 3150 3250 3150
+$Comp
+L Device:Jumper_NC_Small JP?
+U 1 1 5E60999A
+P 4050 3150
+F 0 "JP?" H 4200 3200 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 4050 3271 50  0001 C CNN
+F 2 "" H 4050 3150 50  0001 C CNN
+F 3 "~" H 4050 3150 50  0001 C CNN
+	1    4050 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NC_Small JP?
+U 1 1 5E60B41B
+P 6600 5450
+F 0 "JP?" H 6450 5500 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 6600 5571 50  0001 C CNN
+F 2 "" H 6600 5450 50  0001 C CNN
+F 3 "~" H 6600 5450 50  0001 C CNN
+	1    6600 5450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3250 4150 3250
+Text Label 3250 3250 0    50   ~ 0
+T_SWCLK
+Wire Wire Line
+	3950 3250 3250 3250
+$Comp
+L Device:Jumper_NC_Small JP?
+U 1 1 5E60CB45
+P 4050 3250
+F 0 "JP?" H 4200 3300 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 4050 3371 50  0001 C CNN
+F 2 "" H 4050 3250 50  0001 C CNN
+F 3 "~" H 4050 3250 50  0001 C CNN
+	1    4050 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 5850 7400 5850
+Text Label 7400 5850 2    50   ~ 0
+T_NRST
+Wire Wire Line
+	6150 2150 6600 2150
+Text Label 7500 2150 2    50   ~ 0
+T_SWO
+Wire Wire Line
+	6800 2150 7500 2150
+$Comp
+L Device:Jumper_NC_Small JP?
+U 1 1 5E60E1FE
+P 6700 2150
+F 0 "JP?" H 6850 2200 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 6700 2271 50  0001 C CNN
+F 2 "" H 6700 2150 50  0001 C CNN
+F 3 "~" H 6700 2150 50  0001 C CNN
+	1    6700 2150
+	-1   0    0    -1  
+$EndComp
+Text HLabel 1550 2200 0    50   Input ~ 0
+TRIG_IN
+Wire Wire Line
+	1550 2200 2400 2200
+Text HLabel 10000 3300 2    50   Input ~ 0
+FUNC1_OUT
+Text HLabel 10000 3600 2    50   Input ~ 0
+FUNC2_OUT
+Wire Wire Line
+	10000 3300 9750 3300
+Wire Wire Line
+	10000 3600 9750 3600
+$Comp
+L Device:R R?
+U 1 1 5E6C5C7A
+P 9600 3300
+F 0 "R?" V 9393 3300 50  0000 C CNN
+F 1 "50R" V 9484 3300 50  0000 C CNN
+F 2 "" V 9530 3300 50  0001 C CNN
+F 3 "~" H 9600 3300 50  0001 C CNN
+	1    9600 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9450 3300 9350 3300
+$Comp
+L Device:R R?
+U 1 1 5E6C628C
+P 9600 3600
+F 0 "R?" V 9393 3600 50  0000 C CNN
+F 1 "50R" V 9484 3600 50  0000 C CNN
+F 2 "" V 9530 3600 50  0001 C CNN
+F 3 "~" H 9600 3600 50  0001 C CNN
+	1    9600 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9450 3600 9350 3600
+$Comp
+L Device:Rotary_Encoder_Switch SW?
+U 1 1 5E6C6A77
+P 1900 4500
+F 0 "SW?" V 1050 3950 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" V 1150 3900 50  0000 C CNN
+F 2 "" H 1750 4660 50  0001 C CNN
+F 3 "~" H 1900 4760 50  0001 C CNN
+	1    1900 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2000 4800 2000 5300
+$Comp
+L power:GNDS #PWR?
+U 1 1 5E6C9965
+P 1800 5500
+F 0 "#PWR?" H 1800 5250 50  0001 C CNN
+F 1 "GNDS" H 1805 5327 50  0000 C CNN
+F 2 "" H 1800 5500 50  0001 C CNN
+F 3 "" H 1800 5500 50  0001 C CNN
+	1    1800 5500
+	-1   0    0    -1  
+$EndComp
+Text Label 3050 5300 2    50   ~ 0
+ENC_SW
+Wire Wire Line
+	3050 5300 2000 5300
+Wire Wire Line
+	1800 4800 1800 5300
+Wire Wire Line
+	2000 4200 2000 4050
+Wire Wire Line
+	2000 4050 2700 4050
+Wire Wire Line
+	2700 4050 2700 4200
+$Comp
+L Device:R R?
+U 1 1 5E6CD3DF
+P 2700 4350
+F 0 "R?" H 2770 4396 50  0000 L CNN
+F 1 "220R" H 2770 4305 50  0000 L CNN
+F 2 "" V 2630 4350 50  0001 C CNN
+F 3 "~" H 2700 4350 50  0001 C CNN
+	1    2700 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 4050 1400 4050
+Wire Wire Line
+	1400 4050 1400 4200
+$Comp
+L Device:R R?
+U 1 1 5E6CE327
+P 1400 4350
+F 0 "R?" H 1470 4396 50  0000 L CNN
+F 1 "220R" H 1470 4305 50  0000 L CNN
+F 2 "" V 1330 4350 50  0001 C CNN
+F 3 "~" H 1400 4350 50  0001 C CNN
+	1    1400 4350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 4050 1800 4200
+Wire Wire Line
+	1400 4500 1400 5300
+Wire Wire Line
+	1400 5300 1800 5300
+Connection ~ 1800 5300
+Wire Wire Line
+	1800 5300 1800 5500
+Wire Wire Line
+	2700 4500 2700 4800
+$Comp
+L power:GNDS #PWR?
+U 1 1 5E6D31FF
+P 2700 4800
+F 0 "#PWR?" H 2700 4550 50  0001 C CNN
+F 1 "GNDS" H 2705 4627 50  0000 C CNN
+F 2 "" H 2700 4800 50  0001 C CNN
+F 3 "" H 2700 4800 50  0001 C CNN
+	1    2700 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 3400 1200 3400
+Wire Wire Line
+	1900 3400 1900 4200
+Text HLabel 1200 3400 0    50   Input ~ 0
+5V
+Text HLabel 10000 2550 2    50   Input ~ 0
+AUX_OUT
+Wire Wire Line
+	10000 2550 9750 2550
+$Comp
+L Device:R R?
+U 1 1 5E6D619D
+P 9600 2550
+F 0 "R?" V 9393 2550 50  0000 C CNN
+F 1 "50R" V 9484 2550 50  0000 C CNN
+F 2 "" V 9530 2550 50  0001 C CNN
+F 3 "~" H 9600 2550 50  0001 C CNN
+	1    9600 2550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9450 2550 9350 2550
+$EndSCHEMATC

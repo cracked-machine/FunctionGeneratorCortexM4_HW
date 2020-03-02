@@ -1,0 +1,168 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 3700 1500 2650 3000
+U 5E5FDD07
+F0 "MCU" 50
+F1 "MCU.sch" 50
+F2 "TRIG_IN" I L 3700 2150 50 
+F3 "FUNC1_OUT" I R 6350 2000 50 
+F4 "FUNC2_OUT" I R 6350 2800 50 
+$EndSheet
+$Sheet
+S 3500 5600 1550 1000
+U 5E5FDE87
+F0 "PSU" 50
+F1 "PSU.sch" 50
+F2 "VIN" I L 3500 6000 50 
+F3 "5V" I R 5050 6000 50 
+F4 "3V3" I R 5050 6200 50 
+$EndSheet
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 5E6BED20
+P 2300 6000
+F 0 "J?" H 2218 6217 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 2218 6126 50  0000 C CNN
+F 2 "" H 2300 6000 50  0001 C CNN
+F 3 "~" H 2300 6000 50  0001 C CNN
+	1    2300 6000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 6000 3500 6000
+Wire Wire Line
+	2500 6100 2700 6100
+Wire Wire Line
+	2700 6100 2700 6750
+$Comp
+L power:GNDS #PWR?
+U 1 1 5E6BF431
+P 2700 6750
+F 0 "#PWR?" H 2700 6500 50  0001 C CNN
+F 1 "GNDS" H 2705 6577 50  0000 C CNN
+F 2 "" H 2700 6750 50  0001 C CNN
+F 3 "" H 2700 6750 50  0001 C CNN
+	1    2700 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5E6C10C9
+P 9900 2000
+F 0 "J?" H 10000 1975 50  0000 L CNN
+F 1 "Conn_Coaxial" H 10000 1884 50  0000 L CNN
+F 2 "" H 9900 2000 50  0001 C CNN
+F 3 " ~" H 9900 2000 50  0001 C CNN
+	1    9900 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5E6C1C5A
+P 1600 2150
+F 0 "J?" H 1528 2388 50  0000 C CNN
+F 1 "Conn_Coaxial" H 1528 2297 50  0000 C CNN
+F 2 "" H 1600 2150 50  0001 C CNN
+F 3 " ~" H 1600 2150 50  0001 C CNN
+	1    1600 2150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5E6C23B8
+P 9900 2800
+F 0 "J?" H 10000 2775 50  0000 L CNN
+F 1 "Conn_Coaxial" H 10000 2684 50  0000 L CNN
+F 2 "" H 9900 2800 50  0001 C CNN
+F 3 " ~" H 9900 2800 50  0001 C CNN
+	1    9900 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 2200 9900 2300
+$Comp
+L power:GNDS #PWR?
+U 1 1 5E6C2C2D
+P 9900 2300
+F 0 "#PWR?" H 9900 2050 50  0001 C CNN
+F 1 "GNDS" H 9905 2127 50  0000 C CNN
+F 2 "" H 9900 2300 50  0001 C CNN
+F 3 "" H 9900 2300 50  0001 C CNN
+	1    9900 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 3000 9900 3100
+$Comp
+L power:GNDS #PWR?
+U 1 1 5E6C39D4
+P 9900 3100
+F 0 "#PWR?" H 9900 2850 50  0001 C CNN
+F 1 "GNDS" H 9905 2927 50  0000 C CNN
+F 2 "" H 9900 3100 50  0001 C CNN
+F 3 "" H 9900 3100 50  0001 C CNN
+	1    9900 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 2350 1600 2450
+$Comp
+L power:GNDS #PWR?
+U 1 1 5E6C40E4
+P 1600 2450
+F 0 "#PWR?" H 1600 2200 50  0001 C CNN
+F 1 "GNDS" H 1605 2277 50  0000 C CNN
+F 2 "" H 1600 2450 50  0001 C CNN
+F 3 "" H 1600 2450 50  0001 C CNN
+	1    1600 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 2150 1800 2150
+Wire Wire Line
+	6350 2000 9700 2000
+Wire Wire Line
+	6350 2800 9700 2800
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5E6DBAC5
+P 9900 3650
+F 0 "J?" H 10000 3625 50  0000 L CNN
+F 1 "Conn_Coaxial" H 10000 3534 50  0000 L CNN
+F 2 "" H 9900 3650 50  0001 C CNN
+F 3 " ~" H 9900 3650 50  0001 C CNN
+	1    9900 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 3850 9900 3950
+$Comp
+L power:GNDS #PWR?
+U 1 1 5E6DBAD0
+P 9900 3950
+F 0 "#PWR?" H 9900 3700 50  0001 C CNN
+F 1 "GNDS" H 9905 3777 50  0000 C CNN
+F 2 "" H 9900 3950 50  0001 C CNN
+F 3 "" H 9900 3950 50  0001 C CNN
+	1    9900 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3650 9700 3650
+Text HLabel 6350 3650 0    50   Input ~ 0
+AUX_OUT
+$EndSCHEMATC

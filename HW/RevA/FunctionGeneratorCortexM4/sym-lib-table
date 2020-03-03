@@ -1,3 +1,5 @@
 (sym_lib_table
-  (lib (name STM32G4)(type Legacy)(uri /Users/chrissutton/Projects/HardwareProjects/KicadLibrary/symbol/MCU/STM32G4.lib)(options "")(descr ""))
+  (lib (name STM32G4)(type Legacy)(uri /home/chris/Projects/Hardware/FunctionGeneratorCortexM4/KicadLibrary/symbol/MCU/STM32G4.lib)(options "")(descr ""))
+  (lib (name Tactile_SPST-NO)(type Legacy)(uri /home/chris/Projects/Hardware/FunctionGeneratorCortexM4/KicadLibrary/symbol/SW/Tactile_SPST-NO.lib)(options "")(descr ""))
+  (lib (name PGA)(type Legacy)(uri /home/chris/Projects/Hardware/FunctionGeneratorCortexM4/KicadLibrary/symbol/PGA/PGA.lib)(options "")(descr ""))
 )

@@ -17,7 +17,7 @@ Text HLabel 2525 6825 0    50   Input ~ 0
 FUNC1_SYNC_IN
 Text HLabel 1500 1950 0    50   Input ~ 0
 FUNC1_SIG_IN
-Text HLabel 1875 4975 0    50   Input ~ 0
+Text HLabel 1650 5125 0    50   Input ~ 0
 FUNC1_DCBIAS_IN
 Text HLabel 3875 6825 2    50   Input ~ 0
 FUNC1_SYNC_OUT
@@ -49,21 +49,8 @@ F 3 "" H 2925 5925 50  0001 C CNN
 	1    2925 5925
 	1    0    0    -1  
 $EndComp
-$Comp
-L 74xGxx:74LVC1G3157 U9
-U 1 1 5E61EF05
-P 2175 4975
-F 0 "U9" H 2325 5325 50  0000 C CNN
-F 1 "74LVC1G3157" H 2500 5200 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SC-70-8_Handsoldering" H 2175 4975 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc1g3157.pdf" H 2175 4975 50  0001 C CNN
-	1    2175 4975
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	1875 4975 1975 4975
-Wire Wire Line
-	2175 5175 2175 5925
+	1650 4925 1775 4925
 $Comp
 L power:GNDS #PWR0126
 U 1 1 5E62023E
@@ -75,15 +62,11 @@ F 3 "" H 2175 5925 50  0001 C CNN
 	1    2175 5925
 	1    0    0    -1  
 $EndComp
-Text HLabel 1350 4500 0    50   Input ~ 0
-+5V
 Wire Wire Line
-	1350 4500 2175 4500
+	2175 4500 2175 4725
 Wire Wire Line
-	2175 4500 2175 4775
-Wire Wire Line
-	1975 5175 1750 5175
-Text HLabel 1875 5175 0    50   Input ~ 0
+	1875 5125 1775 5125
+Text HLabel 1650 4925 0    50   Input ~ 0
 DCBIAS_INVERT_IN
 $Comp
 L Device:R R9
@@ -101,9 +84,9 @@ Wire Wire Line
 Wire Wire Line
 	3000 5425 2925 5425
 Wire Wire Line
-	2925 5425 2925 5075
+	2925 5425 2925 5125
 Wire Wire Line
-	2925 5075 2375 5075
+	2925 5125 2475 5125
 Wire Wire Line
 	3375 5425 3375 5175
 Wire Wire Line
@@ -130,9 +113,9 @@ $EndComp
 Wire Wire Line
 	3900 5175 4125 5175
 Wire Wire Line
-	2375 4875 2925 4875
+	2475 4925 2925 4925
 Wire Wire Line
-	2925 4875 2925 4225
+	2925 4925 2925 4225
 Wire Wire Line
 	2925 4225 3450 4225
 Wire Wire Line
@@ -153,14 +136,14 @@ Wire Wire Line
 Wire Wire Line
 	4150 4325 4300 4325
 Wire Wire Line
-	4725 4875 5475 4875
+	4725 4875 5000 4875
 Connection ~ 4725 4875
 Wire Wire Line
 	4725 4875 4725 5525
 Text Label 5475 4875 2    50   ~ 0
 DCBIAS
 Wire Wire Line
-	1975 1950 1500 1950
+	1975 1950 1625 1950
 Text HLabel 2425 1375 1    50   Input ~ 0
 +5V
 Wire Wire Line
@@ -233,7 +216,7 @@ Wire Wire Line
 Wire Wire Line
 	3825 1200 4300 1200
 Wire Wire Line
-	2875 1950 3300 1950
+	2875 1950 3050 1950
 $Comp
 L Amplifier_Operational:TL072 U12
 U 1 1 5E82D1AF
@@ -788,4 +771,139 @@ F 3 "~" H 3450 1950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3600 1950 3750 1950
+Wire Wire Line
+	2175 5325 2175 5925
+$Comp
+L SN74LVC1G3157:SN74LVC1G3157DCKR U4
+U 1 1 5E6AFCB0
+P 2175 5025
+F 0 "U4" H 1475 5525 50  0000 C CNN
+F 1 "SN74LVC1G3157DCKR" H 1275 5400 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering" H 1975 4725 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc1g3157.pdf" H 2275 5225 50  0001 C CNN
+	1    2175 5025
+	1    0    0    -1  
+$EndComp
+Text HLabel 2175 4500 1    50   Input ~ 0
++5V
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E6322DB
+P 1625 1800
+AR Path="/5E5FDE87/5E6322DB" Ref="TP?"  Part="1" 
+AR Path="/5EBB9B06/5E6322DB" Ref="TP5"  Part="1" 
+F 0 "TP5" H 1683 1872 50  0000 L CNN
+F 1 "TestPoint" H 1683 1827 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 1825 1800 50  0001 C CNN
+F 3 "~" H 1825 1800 50  0001 C CNN
+	1    1625 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1625 1800 1625 1950
+Connection ~ 1625 1950
+Wire Wire Line
+	1625 1950 1500 1950
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E6371FD
+P 1775 5275
+AR Path="/5E5FDE87/5E6371FD" Ref="TP?"  Part="1" 
+AR Path="/5EBB9B06/5E6371FD" Ref="TP7"  Part="1" 
+F 0 "TP7" H 1833 5347 50  0000 L CNN
+F 1 "TestPoint" H 1833 5302 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 1975 5275 50  0001 C CNN
+F 3 "~" H 1975 5275 50  0001 C CNN
+	1    1775 5275
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1775 5275 1775 5125
+Connection ~ 1775 5125
+Wire Wire Line
+	1775 5125 1650 5125
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E63C5E2
+P 1775 4775
+AR Path="/5E5FDE87/5E63C5E2" Ref="TP?"  Part="1" 
+AR Path="/5EBB9B06/5E63C5E2" Ref="TP6"  Part="1" 
+F 0 "TP6" H 1833 4847 50  0000 L CNN
+F 1 "TestPoint" H 1833 4802 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 1975 4775 50  0001 C CNN
+F 3 "~" H 1975 4775 50  0001 C CNN
+	1    1775 4775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1775 4775 1775 4925
+Connection ~ 1775 4925
+Wire Wire Line
+	1775 4925 1875 4925
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E641AB5
+P 5000 4725
+AR Path="/5E5FDE87/5E641AB5" Ref="TP?"  Part="1" 
+AR Path="/5EBB9B06/5E641AB5" Ref="TP10"  Part="1" 
+F 0 "TP10" H 5058 4797 50  0000 L CNN
+F 1 "TestPoint" H 5058 4752 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 5200 4725 50  0001 C CNN
+F 3 "~" H 5200 4725 50  0001 C CNN
+	1    5000 4725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 4725 5000 4875
+Connection ~ 5000 4875
+Wire Wire Line
+	5000 4875 5475 4875
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E64776B
+P 3050 1800
+AR Path="/5E5FDE87/5E64776B" Ref="TP?"  Part="1" 
+AR Path="/5EBB9B06/5E64776B" Ref="TP8"  Part="1" 
+F 0 "TP8" H 3108 1872 50  0000 L CNN
+F 1 "TestPoint" H 3108 1827 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 3250 1800 50  0001 C CNN
+F 3 "~" H 3250 1800 50  0001 C CNN
+	1    3050 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 1800 3050 1950
+Connection ~ 3050 1950
+Wire Wire Line
+	3050 1950 3300 1950
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E64CF74
+P 4825 1800
+AR Path="/5E5FDE87/5E64CF74" Ref="TP?"  Part="1" 
+AR Path="/5EBB9B06/5E64CF74" Ref="TP9"  Part="1" 
+F 0 "TP9" H 4883 1872 50  0000 L CNN
+F 1 "TestPoint" H 4883 1827 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 5025 1800 50  0001 C CNN
+F 3 "~" H 5025 1800 50  0001 C CNN
+	1    4825 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4825 1800 4825 1950
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5E652412
+P 10225 2000
+AR Path="/5E5FDE87/5E652412" Ref="TP?"  Part="1" 
+AR Path="/5EBB9B06/5E652412" Ref="TP11"  Part="1" 
+F 0 "TP11" H 10283 2072 50  0000 L CNN
+F 1 "TestPoint" H 10283 2027 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 10425 2000 50  0001 C CNN
+F 3 "~" H 10425 2000 50  0001 C CNN
+	1    10225 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10225 2000 10225 2150
 $EndSCHEMATC

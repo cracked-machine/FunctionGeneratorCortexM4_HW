@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 17)
+    (drawings 16)
     (tracks 661)
     (zones 0)
     (modules 74)
@@ -3343,9 +3343,6 @@
     )
   )
 
-  (gr_text "M4 Function Generator\nRevA © C.Sutton" (at 181.864 76.708) (layer F.SilkS)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
   (gr_circle (center 159.766 90.678) (end 159.766 90.678) (layer F.SilkS) (width 1) (tstamp 5E609707))
   (gr_circle (center 145.034 90.17) (end 145.034 90.17) (layer F.SilkS) (width 1) (tstamp 5E609707))
   (gr_circle (center 145.542 97.536) (end 145.542 97.536) (layer F.SilkS) (width 1) (tstamp 5E609707))

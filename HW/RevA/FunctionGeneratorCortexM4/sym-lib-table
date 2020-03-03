@@ -3,4 +3,5 @@
   (lib (name PGA)(type Legacy)(uri ${KIPRJMOD}/../../../../KicadLibrary/symbol/PGA/PGA.lib)(options "")(descr ""))
   (lib (name Tactile_SPST-NO)(type Legacy)(uri ${KIPRJMOD}/../../../../KicadLibrary/symbol/SW/Tactile_SPST-NO.lib)(options "")(descr ""))
   (lib (name NCP1729)(type Legacy)(uri ${KIPRJMOD}/../../../../KicadLibrary/symbol/PWR/DC-DC/CHARGEPUMP/NCP1729.lib)(options "")(descr ""))
+  (lib (name SN74LVC1G3157)(type Legacy)(uri ${KIPRJMOD}/../../../..//KicadLibrary/symbol/LOGIC/SN74LVC1G3157.lib)(options "")(descr ""))
 )

@@ -114,8 +114,6 @@ Wire Wire Line
 	4900 5725 5675 5725
 Text Label 5675 5725 2    50   ~ 0
 +5V
-Wire Wire Line
-	3350 3950 3025 3950
 Text Label 3025 3950 0    50   ~ 0
 +3V3
 Wire Wire Line
@@ -130,10 +128,6 @@ Wire Wire Line
 	4900 6000 5675 6000
 Text Label 5675 6000 2    50   ~ 0
 -5V
-Wire Wire Line
-	6650 3750 6225 3750
-Text Label 6225 3750 0    50   ~ 0
-+5V
 Wire Wire Line
 	6650 3900 6225 3900
 Text Label 6225 3900 0    50   ~ 0
@@ -213,4 +207,10 @@ Text Label 8150 5700 0    50   ~ 0
 TRIG_SIG_IN
 Text Notes 8375 6025 0    50   ~ 0
 IDC RIBBON CABLE\nTO BNC COAX FRONT PANEL
+Wire Wire Line
+	6650 3750 6225 3750
+Text Label 6225 3750 0    50   ~ 0
++5V
+Wire Wire Line
+	3350 3950 3025 3950
 $EndSCHEMATC

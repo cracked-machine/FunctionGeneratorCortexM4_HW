@@ -15,7 +15,7 @@ Comment4 ""
 $EndDescr
 Text HLabel 2525 6825 0    50   Input ~ 0
 FUNC1_SYNC_IN
-Text HLabel 1950 1950 0    50   Input ~ 0
+Text HLabel 1500 1950 0    50   Input ~ 0
 FUNC1_SIG_IN
 Text HLabel 1725 4675 0    50   Input ~ 0
 FUNC1_DCBIAS_IN
@@ -24,14 +24,14 @@ FUNC1_SYNC_OUT
 $Comp
 L PGA:LTC6910 U?
 U 1 1 5EBD94E1
-P 3125 2250
+P 2425 2250
 AR Path="/5EBD94E1" Ref="U?"  Part="1" 
 AR Path="/5EBB9B06/5EBD94E1" Ref="U11"  Part="1" 
-F 0 "U11" H 3675 2175 50  0000 C CNN
-F 1 "LTC6910" H 3675 2075 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TSOT-23-8" H 2925 2250 50  0001 C CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/6910fb.pdf" H 2925 2250 50  0001 C CNN
-	1    3125 2250
+F 0 "U11" H 2975 2175 50  0000 C CNN
+F 1 "LTC6910" H 2975 2075 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-8" H 2225 2250 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/6910fb.pdf" H 2225 2250 50  0001 C CNN
+	1    2425 2250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -160,35 +160,35 @@ Wire Wire Line
 Text Label 5325 4575 2    50   ~ 0
 DCBIAS
 Wire Wire Line
-	2675 1950 1950 1950
-Text HLabel 3125 1375 1    50   Input ~ 0
+	1975 1950 1500 1950
+Text HLabel 2425 1375 1    50   Input ~ 0
 +5V
 Wire Wire Line
-	3125 1375 3125 1650
+	2425 1375 2425 1650
 Wire Wire Line
-	3025 2800 3025 2950
+	2325 2800 2325 2950
 Wire Wire Line
-	3225 2800 3225 2950
+	2525 2800 2525 2950
 Wire Wire Line
-	3225 2950 3025 2950
-Connection ~ 3025 2950
-Text Label 2075 2550 0    50   ~ 0
+	2525 2950 2325 2950
+Connection ~ 2325 2950
+Text Label 1625 2550 0    50   ~ 0
 SG2
-Text Label 2075 2400 0    50   ~ 0
+Text Label 1625 2400 0    50   ~ 0
 SG1
-Text Label 2075 2250 0    50   ~ 0
+Text Label 1625 2250 0    50   ~ 0
 SG0
 Wire Wire Line
-	1700 2250 2675 2250
+	1250 2250 1975 2250
 Wire Wire Line
-	1700 2400 2675 2400
+	1250 2400 1975 2400
 Wire Wire Line
-	1700 2550 2675 2550
-Text HLabel 1700 2250 0    50   Input ~ 0
+	1250 2550 1975 2550
+Text HLabel 1250 2250 0    50   Input ~ 0
 SG0_IN
-Text HLabel 1700 2400 0    50   Input ~ 0
+Text HLabel 1250 2400 0    50   Input ~ 0
 SG1_IN
-Text HLabel 1700 2550 0    50   Input ~ 0
+Text HLabel 1250 2550 0    50   Input ~ 0
 SG2_IN
 Wire Wire Line
 	2525 6825 3875 6825
@@ -226,14 +226,14 @@ Wire Wire Line
 	4450 5225 4575 5225
 Text HLabel 10450 2150 2    50   Input ~ 0
 FUNC1_SIG_OUT
-Text Label 3775 1600 0    50   ~ 0
+Text Label 3825 1200 0    50   ~ 0
 DCBIAS
 Wire Wire Line
-	4250 1600 4250 1950
+	4300 1200 4300 1400
 Wire Wire Line
-	3775 1600 4250 1600
+	3825 1200 4300 1200
 Wire Wire Line
-	3575 1950 4250 1950
+	2875 1950 3300 1950
 $Comp
 L Amplifier_Operational:TL072 U12
 U 1 1 5E82D1AF
@@ -325,10 +325,10 @@ Text HLabel 10325 4225 1    50   Input ~ 0
 -5V
 Wire Wire Line
 	10325 4225 10325 4400
-Text HLabel 3025 3125 3    50   Input ~ 0
+Text HLabel 2325 3125 3    50   Input ~ 0
 -5V
 Wire Wire Line
-	3025 2950 3025 3125
+	2325 2950 2325 3125
 $Comp
 L Amplifier_Operational:TL072 U13
 U 1 1 5E8F23F2
@@ -634,9 +634,9 @@ Wire Wire Line
 	8625 2600 8625 2700
 Wire Wire Line
 	7450 2050 7700 2050
-Connection ~ 4250 1950
+Connection ~ 4300 1950
 Wire Wire Line
-	4250 1950 4825 1950
+	4300 1950 4825 1950
 Connection ~ 8050 1475
 Wire Wire Line
 	8050 1475 8050 1075
@@ -696,10 +696,10 @@ Connection ~ 5525 1075
 Wire Wire Line
 	5525 1075 5525 1525
 $Comp
-L Device:Jumper_NO_Small JP?
+L Device:Jumper_NO_Small JP15
 U 1 1 5ED419BB
 P 7500 3475
-F 0 "JP?" H 7500 3660 50  0000 C CNN
+F 0 "JP15" H 7500 3660 50  0000 C CNN
 F 1 "Jumper_NO_Small" H 7500 3569 50  0000 C CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 7500 3475 50  0001 C CNN
 F 3 "~" H 7500 3475 50  0001 C CNN
@@ -720,4 +720,72 @@ Wire Wire Line
 Connection ~ 10225 2150
 Wire Wire Line
 	10225 2150 10450 2150
+$Comp
+L Device:R R3
+U 1 1 5E5EB4EE
+P 4300 1550
+F 0 "R3" H 4150 1500 50  0000 L CNN
+F 1 "10K" H 4100 1600 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4230 1550 50  0001 C CNN
+F 3 "~" H 4300 1550 50  0001 C CNN
+	1    4300 1550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4300 1700 4300 1950
+$Comp
+L Device:CP C26
+U 1 1 5E5F576B
+P 4000 1950
+F 0 "C26" V 4255 1950 50  0000 C CNN
+F 1 "CP" V 4164 1950 50  0000 C CNN
+F 2 "Capacitor_SMD:CP_Elec_4x5.7" H 4038 1800 50  0001 C CNN
+F 3 "~" H 4000 1950 50  0001 C CNN
+	1    4000 1950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4150 1950 4300 1950
+$Comp
+L Device:R R2
+U 1 1 5E5FE2BA
+P 3750 2350
+F 0 "R2" H 3600 2300 50  0000 L CNN
+F 1 "10K" H 3550 2400 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3680 2350 50  0001 C CNN
+F 3 "~" H 3750 2350 50  0001 C CNN
+	1    3750 2350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3750 2200 3750 1950
+Connection ~ 3750 1950
+Wire Wire Line
+	3750 1950 3850 1950
+Wire Wire Line
+	3750 2500 3750 3050
+$Comp
+L power:GNDS #PWR0107
+U 1 1 5E60785D
+P 3750 3050
+F 0 "#PWR0107" H 3750 2800 50  0001 C CNN
+F 1 "GNDS" H 3755 2877 50  0000 C CNN
+F 2 "" H 3750 3050 50  0001 C CNN
+F 3 "" H 3750 3050 50  0001 C CNN
+	1    3750 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5E607891
+P 3450 1950
+F 0 "R1" V 3550 1900 50  0000 L CNN
+F 1 "560R" V 3350 1850 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3380 1950 50  0001 C CNN
+F 3 "~" H 3450 1950 50  0001 C CNN
+	1    3450 1950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3600 1950 3750 1950
 $EndSCHEMATC

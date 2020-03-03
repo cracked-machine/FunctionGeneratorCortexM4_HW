@@ -224,7 +224,7 @@ F 3 "~" H 4300 5225 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4450 5225 4575 5225
-Text HLabel 10150 2150 2    50   Input ~ 0
+Text HLabel 10450 2150 2    50   Input ~ 0
 FUNC1_SIG_OUT
 Text Label 3775 1600 0    50   ~ 0
 DCBIAS
@@ -590,7 +590,7 @@ F 3 "" H 8625 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9975 2150 10150 2150
+	9975 2150 10225 2150
 Wire Wire Line
 	8975 2625 9975 2625
 Wire Wire Line
@@ -636,7 +636,7 @@ Wire Wire Line
 	7450 2050 7700 2050
 Connection ~ 4250 1950
 Wire Wire Line
-	4250 1950 5175 1950
+	4250 1950 4825 1950
 Connection ~ 8050 1475
 Wire Wire Line
 	8050 1475 8050 1075
@@ -695,4 +695,29 @@ Wire Wire Line
 Connection ~ 5525 1075
 Wire Wire Line
 	5525 1075 5525 1525
+$Comp
+L Device:Jumper_NO_Small JP?
+U 1 1 5ED419BB
+P 7500 3475
+F 0 "JP?" H 7500 3660 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 7500 3569 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 7500 3475 50  0001 C CNN
+F 3 "~" H 7500 3475 50  0001 C CNN
+	1    7500 3475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 3475 4825 3475
+Wire Wire Line
+	4825 3475 4825 1950
+Connection ~ 4825 1950
+Wire Wire Line
+	4825 1950 5175 1950
+Wire Wire Line
+	7600 3475 10225 3475
+Wire Wire Line
+	10225 3475 10225 2150
+Connection ~ 10225 2150
+Wire Wire Line
+	10225 2150 10450 2150
 $EndSCHEMATC

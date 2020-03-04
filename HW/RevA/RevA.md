@@ -31,3 +31,10 @@
 - Output BNC connector for output waveform. 50Ω impedance.
 
 </details>
+
+<details>
+<summary>
+  Feature requirements
+</summary>
+FunctionGeneratorM4_TopLevel.png
+</details>

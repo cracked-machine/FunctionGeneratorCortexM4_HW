@@ -34,7 +34,7 @@
 
 <details>
 <summary>
-  Feature requirements
+  Top Level Design
 </summary>
 FunctionGeneratorM4_TopLevel.png
 </details>

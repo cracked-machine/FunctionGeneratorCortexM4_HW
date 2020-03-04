@@ -38,3 +38,10 @@
 </summary>
   <p><center><img src="FunctionGeneratorM4_TopLevel.png"></p>
 </details>
+
+<details>
+<summary>
+  PSU Component
+</summary>
+  <p><center><img src="FunctionGeneratorM4_PSU.png"></p>
+</details>

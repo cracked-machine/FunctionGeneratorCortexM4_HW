@@ -955,21 +955,6 @@ $EndComp
 Wire Wire Line
 	2750 6475 3350 6475
 $Comp
-L Device:C C27
-U 1 1 5E7A6377
-P 3625 7350
-F 0 "C27" V 3725 7225 50  0000 C CNN
-F 1 "10pF" V 3725 7500 50  0000 C CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3663 7200 50  0001 C CNN
-F 3 "~" H 3625 7350 50  0001 C CNN
-	1    3625 7350
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3475 7350 3050 7350
-Wire Wire Line
-	3775 7350 4375 7350
-$Comp
 L power:GNDS #PWR09
 U 1 1 5E7B9EF6
 P 3550 6875
@@ -984,10 +969,10 @@ $Comp
 L Amplifier_Operational:MCP601-xOT U7
 U 1 1 5E7B6725
 P 3650 6575
-F 0 "U7" H 3994 6621 50  0000 L CNN
-F 1 "MCP601-xOT" H 3994 6530 50  0000 L CNN
+F 0 "U7" H 3800 6950 50  0000 L CNN
+F 1 "TS321" H 3750 6850 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 3550 6375 50  0001 L CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf" H 3650 6775 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ts321.pdf" H 3650 6775 50  0001 C CNN
 	1    3650 6575
 	1    0    0    -1  
 $EndComp
@@ -995,4 +980,6 @@ Wire Wire Line
 	3050 6675 3050 7350
 Wire Wire Line
 	4375 6575 4375 7350
+Wire Wire Line
+	3050 7350 4375 7350
 $EndSCHEMATC

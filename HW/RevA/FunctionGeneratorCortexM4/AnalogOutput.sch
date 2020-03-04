@@ -965,6 +965,12 @@ F 3 "" H 3550 6875 50  0001 C CNN
 	1    3550 6875
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3050 6675 3050 7350
+Wire Wire Line
+	4375 6575 4375 7350
+Wire Wire Line
+	3050 7350 4375 7350
 $Comp
 L Amplifier_Operational:MCP601-xOT U7
 U 1 1 5E7B6725
@@ -976,10 +982,4 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf" H 3650 6775 50 
 	1    3650 6575
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3050 6675 3050 7350
-Wire Wire Line
-	4375 6575 4375 7350
-Wire Wire Line
-	3050 7350 4375 7350
 $EndSCHEMATC

@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 4
-Title ""
-Date ""
-Rev ""
+Title "Analog Front End "
+Date "2020-03-04"
+Rev "A"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -965,21 +965,21 @@ F 3 "" H 3550 6875 50  0001 C CNN
 	1    3550 6875
 	1    0    0    -1  
 $EndComp
-$Comp
-L Amplifier_Operational:MCP601-xOT U7
-U 1 1 5E7B6725
-P 3650 6575
-F 0 "U7" H 3800 6950 50  0000 L CNN
-F 1 "TS321" H 3750 6850 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 3550 6375 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ts321.pdf" H 3650 6775 50  0001 C CNN
-	1    3650 6575
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3050 6675 3050 7350
 Wire Wire Line
 	4375 6575 4375 7350
 Wire Wire Line
 	3050 7350 4375 7350
+$Comp
+L Amplifier_Operational:MCP601-xOT U7
+U 1 1 5E7B6725
+P 3650 6575
+F 0 "U7" H 3994 6621 50  0000 L CNN
+F 1 "MCP601-xOT" H 3994 6530 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 3550 6375 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21314g.pdf" H 3650 6775 50  0001 C CNN
+	1    3650 6575
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

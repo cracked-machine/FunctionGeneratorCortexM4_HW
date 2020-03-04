@@ -53,3 +53,10 @@
 </summary>
   <p><center><img src="FunctionGeneratorM4_AnalogFrontEnd.svg"></p>
 </details>
+
+<details>
+<summary>
+  <b>Schematic</b>
+</summary>
+  <p><center><img src="FunctionGeneratorCortexM4.pdf"></p>
+</details>

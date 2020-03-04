@@ -61,4 +61,4 @@
   
 </details>
 
-<img src="FunctionGeneratorCortexM4.pdf">
+<a href="FunctionGeneratorCortexM4.pdf"></a>

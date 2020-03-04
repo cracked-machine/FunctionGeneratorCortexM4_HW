@@ -58,7 +58,7 @@
 <summary>
   <b>Schematic</b>
 </summary>
-<a href="schema/FunctionGeneratorCortexM4.pdf">PDF Link</a>
+  <p><a href="schema/FunctionGeneratorCortexM4.pdf">PDF Link</a></p>
 <p><center><img src="schema/FunctionGeneratorCortexM4.svg"></p>
 <p><center><img src="schema/PSU-PSU.svg"></p>
 <p><center><img src="schema/MCU-MCU.svg"></p>

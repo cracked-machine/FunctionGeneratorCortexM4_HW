@@ -1,6 +1,6 @@
 <details>
 <summary>
-  <H2> Feature requirements</H2>
+  Feature requirements
 </summary>
 
 - Output waveforms

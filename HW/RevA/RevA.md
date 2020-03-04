@@ -1,7 +1,7 @@
 <link href="style.css" rel="stylesheet"></link>
 <details>
 <summary>
-  <span id="twisty">Feature requirements</span>
+  <b><u>Feature requirements</b></u>
 </summary>
 
 - Output waveforms

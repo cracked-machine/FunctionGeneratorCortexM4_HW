@@ -1,17 +1,7 @@
 <details>
 <summary>
-
-# CLICK ME
-</summary>
-<p>
-
-#### yes, even hidden code blocks!
-
-```python
-print("hello world!")
-
-
 ## Feature requirements
+</summary>
 
 - Output waveforms
 
@@ -39,3 +29,5 @@ print("hello world!")
 - Input BNC connector for control voltage (to set the output waveform amplitude, trigger the output waveform)
 
 - Output BNC connector for output waveform. 50Ω impedance.
+
+</details>

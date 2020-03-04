@@ -37,28 +37,30 @@
 <summary>
   <b>Top Level Design</b>
 </summary>
-  <p><center><img src="FunctionGeneratorM4_TopLevel.svg"></p>
+  <p><center><img src="diagrams/FunctionGeneratorM4_TopLevel.svg"></p>
 </details>
 
 <details>
 <summary>
   <b>PSU Component</b>
 </summary>
-  <p><center><img src="FunctionGeneratorM4_PSU.svg"></p>
+  <p><center><img src="diagrams/FunctionGeneratorM4_PSU.svg"></p>
 </details>
 
 <details>
 <summary>
   <b>Analog Front End Component</b>
 </summary>
-  <p><center><img src="FunctionGeneratorM4_AnalogFrontEnd.svg"></p>
+  <p><center><img src="diagrams/FunctionGeneratorM4_AnalogFrontEnd.svg"></p>
 </details>
 
 <details>
 <summary>
   <b>Schematic</b>
 </summary>
-  
+<a href="schema/FunctionGeneratorCortexM4.pdf">PDF Link</a>
+<p><center><img src="schema/FunctionGeneratorCortexM4.svg"></p>
+<p><center><img src="schema/PSU-PSU.svg"></p>
+<p><center><img src="schema/MCU-MCU.svg"></p>
+<p><center><img src="schema/AnalogOutput-AnalogOutput.svg"></p>
 </details>
-
-<a href="FunctionGeneratorCortexM4.pdf"></a>

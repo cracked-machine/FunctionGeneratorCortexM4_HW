@@ -58,5 +58,5 @@
 <summary>
   <b>Schematic</b>
 </summary>
-  <p><center><img src="FunctionGeneratorCortexM4.pdf"></p>
+  ![Schema](FunctionGeneratorCortexM4.pdf)
 </details>

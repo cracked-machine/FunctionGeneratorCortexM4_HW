@@ -1,7 +1,7 @@
 <link href="style.css" rel="stylesheet"></link>
 <details>
 <summary>
-  <span id="twisty">Feature requirements</span>
+  <b>Feature requirements</b>
 </summary>
 
 - Output waveforms
@@ -35,14 +35,14 @@
 
 <details>
 <summary>
-  <span id="twisty">Top Level Design</span>
+  <b>Top Level Design</b>
 </summary>
   <p><center><img src="FunctionGeneratorM4_TopLevel.svg"></p>
 </details>
 
 <details>
 <summary>
-  <span id="twisty">PSU Component</span>
+  <b>PSU Component</b>
 </summary>
   <p><center><img src="FunctionGeneratorM4_PSU.svg"></p>
 </details>

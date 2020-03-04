@@ -1,7 +1,7 @@
 <link href="style.css" rel="stylesheet"></link>
 <details>
 <summary>
-  <b>Feature requirements</b>
+  <b>Functional requirements</b>
 </summary>
 
 - Output waveforms

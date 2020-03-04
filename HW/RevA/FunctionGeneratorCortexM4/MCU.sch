@@ -81,9 +81,9 @@ Text HLabel 9750 2125 2    50   Input ~ 0
 FUNC1_DCBIAS
 Text HLabel 9750 2725 2    50   Input ~ 0
 FUNC1_SYNC
-Text Label 4275 2850 0    50   ~ 0
+Text Label 4275 3550 0    50   ~ 0
 ENC_B
-Text Label 4275 2750 0    50   ~ 0
+Text Label 4275 3450 0    50   ~ 0
 ENC_A
 Text Label 9100 4225 0    50   ~ 0
 TFT_LED
@@ -156,17 +156,17 @@ Wire Wire Line
 	10450 4225 10025 4225
 Wire Wire Line
 	9050 4225 9525 4225
-Text Notes 3850 2750 0    50   ~ 0
-TIM4_CH1
-Text Notes 3850 2850 0    50   ~ 0
-TIM4_CH2
-Text Label 4525 3450 0    50   ~ 0
+Text Notes 3850 3450 0    50   ~ 0
+TIM1_CH1
+Text Notes 3850 3550 0    50   ~ 0
+TIM1_CH2
+Text Label 4525 5050 0    50   ~ 0
 BTN1
-Text Label 4525 3550 0    50   ~ 0
+Text Label 4525 5250 0    50   ~ 0
 BTN2
-Text Label 4525 3650 0    50   ~ 0
+Text Label 4525 5450 0    50   ~ 0
 BTN3
-Text Label 4525 3750 0    50   ~ 0
+Text Label 4525 5650 0    50   ~ 0
 BTN4
 Text Label 4250 2050 0    50   ~ 0
 DAC1_OUT1
@@ -176,18 +176,14 @@ Wire Wire Line
 	9000 2125 9750 2125
 Wire Wire Line
 	9000 2725 9750 2725
-Text Label 4250 2450 0    50   ~ 0
-TIM1_TF1FP1
 Text Label 4250 1650 0    50   ~ 0
-ADC_IN1
-Text Label 7925 1750 2    50   ~ 0
+TIM2_TF1FP1
+Text Label 4250 1850 0    50   ~ 0
+ADC_IN3
+Text Label 4225 1750 0    50   ~ 0
 COMP1_INP
 Text Label 2825 2400 2    50   ~ 0
-TIM1_TF1FP1
-Text Label 3200 2200 2    50   ~ 0
-COMP1_INP
-Text Label 3200 2100 2    50   ~ 0
-ADC_IN1
+TIM2_TF1FP1
 Wire Wire Line
 	2200 2400 2825 2400
 Text HLabel 1900 1650 1    50   Input ~ 0
@@ -209,52 +205,22 @@ Wire Wire Line
 	1600 2200 1025 2200
 Text Label 1025 2200 0    50   ~ 0
 CH1_MUX
-$Comp
-L Connector_Generic:Conn_01x03 J5
-U 1 1 5EDBA649
-P 2575 1800
-F 0 "J5" V 2800 1850 50  0000 R CNN
-F 1 "Conn_01x03" V 2700 2025 50  0000 R CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical" H 2575 1800 50  0001 C CNN
-F 3 "~" H 2575 1800 50  0001 C CNN
-	1    2575 1800
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	2200 2200 2475 2200
-Wire Wire Line
-	2475 2200 2475 2000
-Wire Wire Line
-	2575 2000 2575 2200
-Wire Wire Line
-	2575 2200 3200 2200
-Wire Wire Line
-	2675 2100 2675 2000
-Wire Wire Line
-	2675 2100 3200 2100
-Text Label 4500 5450 0    50   ~ 0
-CH1_MUX
-Text Notes 7950 1750 0    50   ~ 0
+Text Notes 4175 1750 2    50   ~ 0
 Using Internal VREF
-Text Label 4500 5650 0    50   ~ 0
-DCBIAS_INVERT
 Wire Wire Line
 	9700 2250 9000 2250
 Text Label 9000 2250 0    50   ~ 0
 DCBIAS_INVERT
 Text HLabel 9700 2250 2    50   Input ~ 0
 DCBIAS_INVERT_OUT
-Text Label 4525 3850 0    50   ~ 0
+Text Label 7925 1650 2    50   ~ 0
 SG0
 Text Label 4525 3950 0    50   ~ 0
 SG1
-Text Label 4525 4050 0    50   ~ 0
+Text Label 4525 3850 0    50   ~ 0
 SG2
 Text HLabel 9725 3125 2    50   Input ~ 0
 SG0_OUT
-NoConn ~ 5450 1750
-NoConn ~ 5450 1850
-NoConn ~ 5450 1950
 NoConn ~ 5450 2350
 NoConn ~ 5450 2550
 NoConn ~ 5450 2650
@@ -262,8 +228,6 @@ NoConn ~ 5450 3150
 NoConn ~ 5450 4250
 NoConn ~ 5450 4350
 NoConn ~ 5450 4750
-NoConn ~ 5450 5050
-NoConn ~ 5450 5250
 NoConn ~ 7000 3450
 NoConn ~ 7000 3150
 NoConn ~ 7000 3050
@@ -274,7 +238,7 @@ NoConn ~ 7000 2650
 NoConn ~ 7000 2150
 NoConn ~ 7000 2050
 NoConn ~ 7000 1850
-NoConn ~ 7000 1650
+NoConn ~ 7000 1750
 $Comp
 L Connector_Generic:Conn_02x07_Odd_Even J7
 U 1 1 5E658A3D
@@ -384,7 +348,7 @@ Wire Wire Line
 	9000 3125 9725 3125
 Wire Wire Line
 	9000 3325 9725 3325
-Text Label 4525 4150 0    50   ~ 0
+Text Label 4275 3650 0    50   ~ 0
 ENC_SW
 Wire Wire Line
 	4000 6675 4425 6675
@@ -440,22 +404,22 @@ Text Label 9000 1550 0    50   ~ 0
 DAC1_OUT1
 Text HLabel 9750 1550 2    50   Input ~ 0
 FUNC1_SIG
-Text Label 1800 4200 0    50   ~ 0
+Text Label 1800 4500 0    50   ~ 0
 ENC_A
 Wire Wire Line
-	2100 4200 1800 4200
+	2100 4500 1800 4500
 Wire Wire Line
-	2100 4300 1800 4300
-Text Label 1800 4300 0    50   ~ 0
+	2100 4400 1800 4400
+Text Label 1800 4400 0    50   ~ 0
 ENC_B
 Wire Wire Line
 	2100 4100 1375 4100
 Text HLabel 1375 4025 1    50   Input ~ 0
 3V3_VIN
-Text Label 1800 4500 0    50   ~ 0
+Text Label 1800 4200 0    50   ~ 0
 ENC_SW
 Wire Wire Line
-	1800 4500 2100 4500
+	1800 4200 2100 4200
 Wire Wire Line
 	2600 4200 3250 4200
 Text Label 3250 4200 2    50   ~ 0
@@ -517,10 +481,6 @@ F 3 "~" H 2300 4300 50  0001 C CNN
 	1    2300 4300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2100 4400 1375 4400
-Wire Wire Line
-	1375 4400 1375 4600
 Connection ~ 1375 4600
 Wire Wire Line
 	3225 4100 3225 3975
@@ -550,41 +510,33 @@ Wire Wire Line
 Wire Wire Line
 	1350 2400 1600 2400
 Wire Wire Line
-	1900 1650 1900 2000
-Wire Wire Line
-	4500 5450 5450 5450
-Wire Wire Line
-	4500 5650 5450 5650
-Wire Wire Line
 	4525 4650 5450 4650
 Wire Wire Line
 	4525 4450 5450 4450
 Wire Wire Line
-	4525 4150 5450 4150
+	4275 3650 5450 3650
 Wire Wire Line
-	4525 4050 5450 4050
+	4525 3850 5450 3850
 Wire Wire Line
 	4525 3950 5450 3950
 Wire Wire Line
-	4525 3450 5450 3450
+	4525 5050 5450 5050
 Wire Wire Line
-	4525 3550 5450 3550
+	4525 5250 5450 5250
 Wire Wire Line
-	4525 3650 5450 3650
+	4525 5450 5450 5450
 Wire Wire Line
-	4525 3750 5450 3750
+	4525 5650 5450 5650
 Wire Wire Line
-	4525 3850 5450 3850
+	7925 1650 7000 1650
 Wire Wire Line
 	4275 3050 5450 3050
 Wire Wire Line
 	4275 2950 5450 2950
 Wire Wire Line
-	4275 2850 5450 2850
+	4275 3550 5450 3550
 Wire Wire Line
-	4275 2750 5450 2750
-Wire Wire Line
-	4250 2450 5450 2450
+	4275 3450 5450 3450
 Wire Wire Line
 	4250 2250 5450 2250
 Wire Wire Line
@@ -592,9 +544,9 @@ Wire Wire Line
 Wire Wire Line
 	4250 2050 5450 2050
 Wire Wire Line
-	4250 1650 5450 1650
+	4250 1850 5450 1850
 Wire Wire Line
-	7000 1750 7925 1750
+	5450 1750 4225 1750
 Wire Wire Line
 	7000 1950 7975 1950
 Wire Wire Line
@@ -605,4 +557,66 @@ Wire Wire Line
 	7000 2550 7975 2550
 Wire Wire Line
 	9000 1550 9750 1550
+Text Notes 3800 3650 0    50   ~ 0
+GPIO_EXTI2
+Wire Wire Line
+	1375 4300 2100 4300
+Wire Wire Line
+	1375 4300 1375 4600
+Text Notes 3975 5050 0    50   ~ 0
+GPIO_EXTI14
+Text Notes 3975 5250 0    50   ~ 0
+GPIO_EXTI15
+Text Notes 3975 5450 0    50   ~ 0
+GPIO_EXTI0
+Text Notes 3975 5650 0    50   ~ 0
+GPIO_EXTI1
+Wire Wire Line
+	2350 1850 2800 1850
+Wire Wire Line
+	2350 1650 2800 1650
+Wire Wire Line
+	1900 1650 1900 2000
+Wire Wire Line
+	2200 2200 2275 2200
+Wire Wire Line
+	2275 2200 2275 1750
+Wire Wire Line
+	2275 1750 2800 1750
+Wire Wire Line
+	4250 1650 5450 1650
+Wire Wire Line
+	4250 1950 5450 1950
+Text Label 4250 1950 0    50   ~ 0
+DCBIAS_INVERT
+Text Label 4500 3750 0    50   ~ 0
+CH1_MUX
+Wire Wire Line
+	4500 3750 5450 3750
+Text Notes 4225 4450 0    50   ~ 0
+SPI3
+Text Notes 4225 4650 0    50   ~ 0
+SPI3
+Text Notes 4225 4550 0    50   ~ 0
+SPI3
+NoConn ~ 5450 4050
+NoConn ~ 5450 4150
+NoConn ~ 5450 2750
+NoConn ~ 5450 2850
+NoConn ~ 5450 2450
+Text Label 2350 1650 0    50   ~ 0
+ADC_IN3
+Text Label 2350 1850 0    50   ~ 0
+COMP1_INP
+$Comp
+L Connector_Generic:Conn_01x03 J5
+U 1 1 5EDBA649
+P 3000 1750
+F 0 "J5" H 2675 2075 50  0000 R CNN
+F 1 "Conn_01x03" H 3050 1975 50  0000 R CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical" H 3000 1750 50  0001 C CNN
+F 3 "~" H 3000 1750 50  0001 C CNN
+	1    3000 1750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

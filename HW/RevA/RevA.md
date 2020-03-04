@@ -46,3 +46,10 @@
 </summary>
   <p><center><img src="FunctionGeneratorM4_PSU.svg"></p>
 </details>
+
+<details>
+<summary>
+  <b>Analog Front End Component</b>
+</summary>
+  <p><center><img src="FunctionGeneratorM4_AnalogFrontEnd.svg"></p>
+</details>

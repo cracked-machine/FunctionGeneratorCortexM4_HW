@@ -36,5 +36,5 @@
 <summary>
   Top Level Design
 </summary>
-<img src="FunctionGeneratorM4_TopLevel.png">
+  <p><center><img src="FunctionGeneratorM4_TopLevel.png"></p>
 </details>

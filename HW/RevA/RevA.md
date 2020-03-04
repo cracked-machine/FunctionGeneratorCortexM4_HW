@@ -1,6 +1,6 @@
 <details>
 <summary>
-## Feature requirements
+# Feature requirements
 </summary>
 
 - Output waveforms

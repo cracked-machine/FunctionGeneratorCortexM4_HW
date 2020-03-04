@@ -36,12 +36,12 @@
 <summary>
   Top Level Design
 </summary>
-  <p><center><img src="FunctionGeneratorM4_TopLevel.png"></p>
+  <p><center><img src="FunctionGeneratorM4_TopLevel.svg"></p>
 </details>
 
 <details>
 <summary>
   PSU Component
 </summary>
-  <p><center><img src="FunctionGeneratorM4_PSU.png"></p>
+  <p><center><img src="FunctionGeneratorM4_PSU.svg"></p>
 </details>

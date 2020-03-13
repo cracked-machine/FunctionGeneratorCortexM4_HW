@@ -1,0 +1,31 @@
+11:16:11 **** Incremental Build of configuration Debug for project SW ****
+make -j4 all 
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../../Drivers/CMSIS/Include -I../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../../Inc -I../../Drivers/STM32G4xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/stm32g4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../../Drivers/CMSIS/Include -I../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../../Inc -I../../Drivers/STM32G4xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/stm32g4xx_hal_msp.d" -MT"Src/stm32g4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/stm32g4xx_hal_msp.o"
+arm-none-eabi-gcc "../Src/stm32g4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../../Drivers/CMSIS/Include -I../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../../Inc -I../../Drivers/STM32G4xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/stm32g4xx_it.d" -MT"Src/stm32g4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/stm32g4xx_it.o"
+arm-none-eabi-gcc "../Src/system_stm32g4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32G474xx -DDEBUG -c -I../../Drivers/CMSIS/Include -I../../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../../Inc -I../../Drivers/STM32G4xx_HAL_Driver/Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/system_stm32g4xx.d" -MT"Src/system_stm32g4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/system_stm32g4xx.o"
+../Src/stm32g4xx_it.c:22:10: fatal error: main.h: No such file or directory
+ #include "main.h"
+          ^~~~~~~~
+../Src/main.c:22:10: fatal error: main.h: No such file or directory
+ #include "main.h"
+          ^~~~~~~~
+compilation terminated.
+compilation terminated.
+../Src/stm32g4xx_hal_msp.c:23:10: fatal error: main.h: No such file or directory
+ #include "main.h"
+          ^~~~~~~~
+compilation terminated.
+make: *** [Src/subdir.mk:21: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Src/system_stm32g4xx.c:79:10: fatal error: stm32g4xx.h: No such file or directory
+ #include "stm32g4xx.h"
+          ^~~~~~~~~~~~~
+compilation terminated.
+make: *** [Src/subdir.mk:25: Src/stm32g4xx_it.o] Error 1
+make: *** [Src/subdir.mk:27: Src/system_stm32g4xx.o] Error 1
+make: *** [Src/subdir.mk:23: Src/stm32g4xx_hal_msp.o] Error 1
+"make -j4 all" terminated with exit code 2. Build might be incomplete.
+
+11:16:12 Build Failed. 9 errors, 0 warnings. (took 823ms)
+

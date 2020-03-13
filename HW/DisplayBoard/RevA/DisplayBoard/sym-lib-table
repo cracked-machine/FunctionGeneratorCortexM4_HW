@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Tactile_SPST-NO)(type Legacy)(uri ${KIPRJMOD}/../../../../../KicadLibrary/symbol/SW/Tactile_SPST-NO.lib)(options "")(descr ""))
+)

@@ -16,74 +16,74 @@ $EndDescr
 $Comp
 L STM32G4:STM32G474RET U?
 U 1 1 5E601D7F
-P 6250 3650
+P 6875 3650
 AR Path="/5E601D7F" Ref="U?"  Part="1" 
 AR Path="/5E5FDD07/5E601D7F" Ref="U6"  Part="1" 
-F 0 "U6" H 6225 5965 50  0000 C CNN
-F 1 "STM32G474RET" H 6225 5874 50  0000 C CNN
-F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 6250 4250 50  0001 C CNN
-F 3 "https://www.st.com/resource/en/datasheet/stm32g474re.pdf" H 6100 4250 50  0001 C CNN
-	1    6250 3650
+F 0 "U6" H 6850 5965 50  0000 C CNN
+F 1 "STM32G474RET" H 6850 5874 50  0000 C CNN
+F 2 "Package_QFP:LQFP-64_10x10mm_P0.5mm" H 6875 4250 50  0001 C CNN
+F 3 "https://www.st.com/resource/en/datasheet/stm32g474re.pdf" H 6725 4250 50  0001 C CNN
+	1    6875 3650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7000 5250 7125 5250
+	7625 5250 7750 5250
 $Comp
 L Device:R R7
 U 1 1 5E6051B9
-P 7725 5250
-F 0 "R7" V 7518 5250 50  0000 C CNN
-F 1 "10K" V 7609 5250 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 7655 5250 50  0001 C CNN
-F 3 "~" H 7725 5250 50  0001 C CNN
-	1    7725 5250
+P 8350 5250
+F 0 "R7" V 8143 5250 50  0000 C CNN
+F 1 "10K" V 8234 5250 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 8280 5250 50  0001 C CNN
+F 3 "~" H 8350 5250 50  0001 C CNN
+	1    8350 5250
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7325 5250 7575 5250
+	7950 5250 8200 5250
 $Comp
 L power:GNDS #PWR0105
 U 1 1 5E605769
-P 8025 5500
-F 0 "#PWR0105" H 8025 5250 50  0001 C CNN
-F 1 "GNDS" H 8030 5327 50  0000 C CNN
-F 2 "" H 8025 5500 50  0001 C CNN
-F 3 "" H 8025 5500 50  0001 C CNN
-	1    8025 5500
+P 8650 5500
+F 0 "#PWR0105" H 8650 5250 50  0001 C CNN
+F 1 "GNDS" H 8655 5327 50  0000 C CNN
+F 2 "" H 8650 5500 50  0001 C CNN
+F 3 "" H 8650 5500 50  0001 C CNN
+	1    8650 5500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8025 5500 8025 5250
+	8650 5500 8650 5250
 Wire Wire Line
-	8025 5250 7875 5250
-Text Label 4275 2950 0    50   ~ 0
+	8650 5250 8500 5250
+Text Label 4900 2950 0    50   ~ 0
 T_SWDIO
 $Comp
 L Device:Jumper_NC_Small JP10
 U 1 1 5E60B41B
-P 7225 5250
-F 0 "JP10" H 7075 5300 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 7225 5371 50  0001 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7225 5250 50  0001 C CNN
-F 3 "~" H 7225 5250 50  0001 C CNN
-	1    7225 5250
+P 7850 5250
+F 0 "JP10" H 7700 5300 50  0000 C CNN
+F 1 "Jumper_NC_Small" H 7850 5371 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7850 5250 50  0001 C CNN
+F 3 "~" H 7850 5250 50  0001 C CNN
+	1    7850 5250
 	-1   0    0    -1  
 $EndComp
-Text Label 4275 3050 0    50   ~ 0
+Text Label 4900 3050 0    50   ~ 0
 T_SWCLK
 Wire Wire Line
-	7000 5650 7675 5650
-Text Label 7675 5650 2    50   ~ 0
+	7625 5650 8300 5650
+Text Label 8300 5650 2    50   ~ 0
 T_NRST
-Text Label 7975 1950 2    50   ~ 0
+Text Label 8600 1950 2    50   ~ 0
 T_SWO
 Text HLabel 9750 2125 2    50   Input ~ 0
 FUNC1_DCBIAS
 Text HLabel 9750 2725 2    50   Input ~ 0
 FUNC1_SYNC
-Text Label 4275 3550 0    50   ~ 0
+Text Label 4900 3550 0    50   ~ 0
 ENC_B
-Text Label 4275 3450 0    50   ~ 0
+Text Label 4900 3450 0    50   ~ 0
 ENC_A
 Text Label 9100 4225 0    50   ~ 0
 TFT_LED
@@ -116,20 +116,20 @@ F 3 "" H 9100 4725 50  0001 C CNN
 	1    9100 4725
 	1    0    0    -1  
 $EndComp
-Text Label 4525 4450 0    50   ~ 0
+Text Label 5150 4450 0    50   ~ 0
 TFT_SCK
 Text Label 10450 4425 2    50   ~ 0
 TFT_CS
-Text Label 4525 4650 0    50   ~ 0
+Text Label 5150 4650 0    50   ~ 0
 TFT_MOSI
 Wire Wire Line
-	5450 4550 5250 4550
-NoConn ~ 5250 4550
-Text Label 7975 2250 2    50   ~ 0
+	6075 4550 5875 4550
+NoConn ~ 5875 4550
+Text Label 8600 2250 2    50   ~ 0
 TFT_DC
-Text Label 7975 2550 2    50   ~ 0
+Text Label 8600 2550 2    50   ~ 0
 TFT_RST
-Text Label 7975 2350 2    50   ~ 0
+Text Label 8600 2350 2    50   ~ 0
 TFT_CS
 $Comp
 L Connector_Generic:Conn_02x04_Odd_Even J6
@@ -156,56 +156,56 @@ Wire Wire Line
 	10450 4225 10025 4225
 Wire Wire Line
 	9050 4225 9525 4225
-Text Notes 3850 3450 0    50   ~ 0
+Text Notes 4475 3450 0    50   ~ 0
 TIM1_CH1
-Text Notes 3850 3550 0    50   ~ 0
+Text Notes 4475 3550 0    50   ~ 0
 TIM1_CH2
-Text Label 4525 5050 0    50   ~ 0
+Text Label 5150 5050 0    50   ~ 0
 BTN1
-Text Label 4525 5250 0    50   ~ 0
+Text Label 5150 5250 0    50   ~ 0
 BTN2
-Text Label 4525 5450 0    50   ~ 0
+Text Label 5150 5450 0    50   ~ 0
 BTN3
-Text Label 4525 5650 0    50   ~ 0
+Text Label 5150 5650 0    50   ~ 0
 BTN4
-Text Label 4250 2050 0    50   ~ 0
+Text Label 4875 2050 0    50   ~ 0
 DAC1_OUT1
-Text Label 4250 2150 0    50   ~ 0
+Text Label 4875 2150 0    50   ~ 0
 DAC1_OUT2
 Wire Wire Line
 	9000 2125 9750 2125
 Wire Wire Line
 	9000 2725 9750 2725
-Text Label 4250 1650 0    50   ~ 0
+Text Label 4875 1650 0    50   ~ 0
 TIM2_TF1FP1
-Text Label 4250 1850 0    50   ~ 0
+Text Label 4875 1850 0    50   ~ 0
 ADC_IN3
-Text Label 4225 1750 0    50   ~ 0
+Text Label 4850 1750 0    50   ~ 0
 COMP1_INP
-Text Label 2825 2400 2    50   ~ 0
+Text Label 2300 2400 2    50   ~ 0
 TIM2_TF1FP1
 Wire Wire Line
-	2200 2400 2825 2400
-Text HLabel 1900 1650 1    50   Input ~ 0
+	1825 2400 2300 2400
+Text HLabel 1900 1725 1    50   Input ~ 0
 3V3_VIN
 $Comp
 L power:GNDS #PWR0113
 U 1 1 5EA1E126
-P 1900 2800
-F 0 "#PWR0113" H 1900 2550 50  0001 C CNN
-F 1 "GNDS" H 1905 2627 50  0000 C CNN
-F 2 "" H 1900 2800 50  0001 C CNN
-F 3 "" H 1900 2800 50  0001 C CNN
-	1    1900 2800
+P 1525 2800
+F 0 "#PWR0113" H 1525 2550 50  0001 C CNN
+F 1 "GNDS" H 1530 2627 50  0000 C CNN
+F 2 "" H 1525 2800 50  0001 C CNN
+F 3 "" H 1525 2800 50  0001 C CNN
+	1    1525 2800
 	1    0    0    -1  
 $EndComp
-Text HLabel 1350 2400 0    50   Input ~ 0
+Text HLabel 1125 2400 0    50   Input ~ 0
 TRIG_IN
 Wire Wire Line
-	1600 2200 1025 2200
-Text Label 1025 2200 0    50   ~ 0
+	1225 2200 800  2200
+Text Label 800  2200 0    50   ~ 0
 CH1_MUX
-Text Notes 4175 1750 2    50   ~ 0
+Text Notes 4800 1750 2    50   ~ 0
 Using Internal VREF
 Wire Wire Line
 	9700 2250 9000 2250
@@ -213,32 +213,32 @@ Text Label 9000 2250 0    50   ~ 0
 DCBIAS_INVERT
 Text HLabel 9700 2250 2    50   Input ~ 0
 DCBIAS_INVERT_OUT
-Text Label 7925 1650 2    50   ~ 0
+Text Label 8550 1650 2    50   ~ 0
 SG0
-Text Label 4525 3950 0    50   ~ 0
+Text Label 5150 3950 0    50   ~ 0
 SG1
-Text Label 4525 3850 0    50   ~ 0
+Text Label 5150 3850 0    50   ~ 0
 SG2
 Text HLabel 9725 3125 2    50   Input ~ 0
 SG0_OUT
-NoConn ~ 5450 2350
-NoConn ~ 5450 2550
-NoConn ~ 5450 2650
-NoConn ~ 5450 3150
-NoConn ~ 5450 4250
-NoConn ~ 5450 4350
-NoConn ~ 5450 4750
-NoConn ~ 7000 3450
-NoConn ~ 7000 3150
-NoConn ~ 7000 3050
-NoConn ~ 7000 2950
-NoConn ~ 7000 2850
-NoConn ~ 7000 2750
-NoConn ~ 7000 2650
-NoConn ~ 7000 2150
-NoConn ~ 7000 2050
-NoConn ~ 7000 1850
-NoConn ~ 7000 1750
+NoConn ~ 6075 2350
+NoConn ~ 6075 2550
+NoConn ~ 6075 2650
+NoConn ~ 6075 3150
+NoConn ~ 6075 4250
+NoConn ~ 6075 4350
+NoConn ~ 6075 4750
+NoConn ~ 7625 3450
+NoConn ~ 7625 3150
+NoConn ~ 7625 3050
+NoConn ~ 7625 2950
+NoConn ~ 7625 2850
+NoConn ~ 7625 2750
+NoConn ~ 7625 2650
+NoConn ~ 7625 2150
+NoConn ~ 7625 2050
+NoConn ~ 7625 1850
+NoConn ~ 7625 1750
 $Comp
 L Connector_Generic:Conn_02x07_Odd_Even J7
 U 1 1 5E658A3D
@@ -330,7 +330,7 @@ T_SWCLK
 NoConn ~ 2975 6950
 Wire Wire Line
 	9100 4425 9525 4425
-Text Label 4250 2250 0    50   ~ 0
+Text Label 4875 2250 0    50   ~ 0
 DAC2_OUT1
 Text HLabel 9725 3225 2    50   Input ~ 0
 SG1_OUT
@@ -348,7 +348,7 @@ Wire Wire Line
 	9000 3125 9725 3125
 Wire Wire Line
 	9000 3325 9725 3325
-Text Label 4275 3650 0    50   ~ 0
+Text Label 4900 3650 0    50   ~ 0
 ENC_SW
 Wire Wire Line
 	4000 6675 4425 6675
@@ -497,128 +497,164 @@ TFT Front Panel Display Connector
 $Comp
 L SN74LVC1G3157:SN74LVC1G3157DCKR U2
 U 1 1 5E6F0364
-P 1900 2300
-F 0 "U2" H 1550 2775 50  0000 C CNN
-F 1 "SN74LVC1G3157DCKR" H 1400 2675 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering" H 1700 2000 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc1g3157.pdf" H 2000 2500 50  0001 C CNN
-	1    1900 2300
+P 1525 2300
+F 0 "U2" H 1225 2925 50  0000 C CNN
+F 1 "SN74LVC1G3157DCKR" H 1225 2825 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering" H 1325 2000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc1g3157.pdf" H 1625 2500 50  0001 C CNN
+	1    1525 2300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1900 2800 1900 2600
+	1525 2800 1525 2600
 Wire Wire Line
-	1350 2400 1600 2400
+	1125 2400 1225 2400
 Wire Wire Line
-	4525 4650 5450 4650
+	5150 4650 6075 4650
 Wire Wire Line
-	4525 4450 5450 4450
+	5150 4450 6075 4450
 Wire Wire Line
-	4275 3650 5450 3650
+	4900 3650 6075 3650
 Wire Wire Line
-	4525 3850 5450 3850
+	5150 3850 6075 3850
 Wire Wire Line
-	4525 3950 5450 3950
+	5150 3950 6075 3950
 Wire Wire Line
-	4525 5050 5450 5050
+	5150 5050 6075 5050
 Wire Wire Line
-	4525 5250 5450 5250
+	5150 5250 6075 5250
 Wire Wire Line
-	4525 5450 5450 5450
+	5150 5450 6075 5450
 Wire Wire Line
-	4525 5650 5450 5650
+	5150 5650 6075 5650
 Wire Wire Line
-	7925 1650 7000 1650
+	8550 1650 7625 1650
 Wire Wire Line
-	4275 3050 5450 3050
+	4900 3050 6075 3050
 Wire Wire Line
-	4275 2950 5450 2950
+	4900 2950 6075 2950
 Wire Wire Line
-	4275 3550 5450 3550
+	4900 3550 6075 3550
 Wire Wire Line
-	4275 3450 5450 3450
+	4900 3450 6075 3450
 Wire Wire Line
-	4250 2250 5450 2250
+	4875 2250 6075 2250
 Wire Wire Line
-	4250 2150 5450 2150
+	4875 2150 6075 2150
 Wire Wire Line
-	4250 2050 5450 2050
+	4875 2050 6075 2050
 Wire Wire Line
-	4250 1850 5450 1850
+	4875 1850 6075 1850
 Wire Wire Line
-	5450 1750 4225 1750
+	6075 1750 4850 1750
 Wire Wire Line
-	7000 1950 7975 1950
+	7625 1950 8600 1950
 Wire Wire Line
-	7000 2250 7975 2250
+	7625 2250 8600 2250
 Wire Wire Line
-	7000 2350 7975 2350
+	7625 2350 8600 2350
 Wire Wire Line
-	7000 2550 7975 2550
+	7625 2550 8600 2550
 Wire Wire Line
 	9000 1550 9750 1550
-Text Notes 3800 3650 0    50   ~ 0
+Text Notes 4425 3650 0    50   ~ 0
 GPIO_EXTI2
 Wire Wire Line
 	1375 4300 2100 4300
 Wire Wire Line
 	1375 4300 1375 4600
-Text Notes 3975 5050 0    50   ~ 0
+Text Notes 4600 5050 0    50   ~ 0
 GPIO_EXTI14
-Text Notes 3975 5250 0    50   ~ 0
+Text Notes 4600 5250 0    50   ~ 0
 GPIO_EXTI15
-Text Notes 3975 5450 0    50   ~ 0
+Text Notes 4600 5450 0    50   ~ 0
 GPIO_EXTI0
-Text Notes 3975 5650 0    50   ~ 0
+Text Notes 4600 5650 0    50   ~ 0
 GPIO_EXTI1
 Wire Wire Line
-	2350 1850 2800 1850
+	2400 2300 2950 2300
 Wire Wire Line
-	2350 1650 2800 1650
+	2400 2100 2950 2100
 Wire Wire Line
-	1900 1650 1900 2000
+	4875 1650 6075 1650
 Wire Wire Line
-	2200 2200 2275 2200
-Wire Wire Line
-	2275 2200 2275 1750
-Wire Wire Line
-	2275 1750 2800 1750
-Wire Wire Line
-	4250 1650 5450 1650
-Wire Wire Line
-	4250 1950 5450 1950
-Text Label 4250 1950 0    50   ~ 0
+	4875 1950 6075 1950
+Text Label 4875 1950 0    50   ~ 0
 DCBIAS_INVERT
-Text Label 4500 3750 0    50   ~ 0
+Text Label 5125 3750 0    50   ~ 0
 CH1_MUX
 Wire Wire Line
-	4500 3750 5450 3750
-Text Notes 4225 4450 0    50   ~ 0
+	5125 3750 6075 3750
+Text Notes 4850 4450 0    50   ~ 0
 SPI3
-Text Notes 4225 4650 0    50   ~ 0
+Text Notes 4850 4650 0    50   ~ 0
 SPI3
-Text Notes 4225 4550 0    50   ~ 0
+Text Notes 4850 4550 0    50   ~ 0
 SPI3
-NoConn ~ 5450 4050
-NoConn ~ 5450 4150
-NoConn ~ 5450 2750
-NoConn ~ 5450 2850
-NoConn ~ 5450 2450
-Text Label 2350 1650 0    50   ~ 0
+NoConn ~ 6075 4050
+NoConn ~ 6075 4150
+NoConn ~ 6075 2750
+NoConn ~ 6075 2850
+NoConn ~ 6075 2450
+Text Label 2400 2100 0    50   ~ 0
 ADC_IN3
-Text Label 2350 1850 0    50   ~ 0
+Text Label 2400 2300 0    50   ~ 0
 COMP1_INP
 $Comp
 L Connector_Generic:Conn_01x03 J5
 U 1 1 5EDBA649
-P 3000 1750
-F 0 "J5" H 2675 2075 50  0000 R CNN
-F 1 "Conn_01x03" H 3050 1975 50  0000 R CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical" H 3000 1750 50  0001 C CNN
-F 3 "~" H 3000 1750 50  0001 C CNN
-	1    3000 1750
+P 3250 2200
+F 0 "J5" H 3450 2250 50  0000 R CNN
+F 1 "Conn_01x03" H 3800 2150 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3250 2200 50  0001 C CNN
+F 3 "~" H 3250 2200 50  0001 C CNN
+	1    3250 2200
 	1    0    0    -1  
 $EndComp
-Text Notes 3500 1950 0    50   ~ 0
+Text Notes 4125 1950 0    50   ~ 0
 GPIO_OUTPUT
+Wire Wire Line
+	2950 1950 2950 2100
+Connection ~ 2950 2100
+Wire Wire Line
+	2950 2100 3050 2100
+Wire Wire Line
+	1825 2200 3050 2200
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5F13C7D1
+P 2950 2450
+AR Path="/5E5FDE87/5F13C7D1" Ref="TP?"  Part="1" 
+AR Path="/5E5FDD07/5F13C7D1" Ref="TP15"  Part="1" 
+F 0 "TP15" H 3008 2522 50  0000 L CNN
+F 1 "TestPoint" H 3008 2477 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 3150 2450 50  0001 C CNN
+F 3 "~" H 3150 2450 50  0001 C CNN
+	1    2950 2450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2950 2450 2950 2300
+Connection ~ 2950 2300
+Wire Wire Line
+	2950 2300 3050 2300
+Wire Wire Line
+	1900 1725 1900 1950
+Wire Wire Line
+	1900 1950 1525 1950
+Wire Wire Line
+	1525 1950 1525 2000
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5F0F3AA1
+P 2950 1950
+AR Path="/5E5FDE87/5F0F3AA1" Ref="TP?"  Part="1" 
+AR Path="/5E5FDD07/5F0F3AA1" Ref="TP14"  Part="1" 
+F 0 "TP14" H 3008 2022 50  0000 L CNN
+F 1 "TestPoint" H 3008 1977 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 3150 1950 50  0001 C CNN
+F 3 "~" H 3150 1950 50  0001 C CNN
+	1    2950 1950
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC

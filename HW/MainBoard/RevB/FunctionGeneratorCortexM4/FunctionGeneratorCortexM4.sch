@@ -138,7 +138,7 @@ U 1 1 5E8E71FC
 P 8975 5500
 F 0 "J1" H 9025 5917 50  0000 C CNN
 F 1 "Conn_02x05_Odd_Even" H 9025 5826 50  0000 C CNN
-F 2 "Connector_IDC:IDC-Header_2x06_P2.54mm_Vertical" H 8975 5500 50  0001 C CNN
+F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" H 8975 5500 50  0001 C CNN
 F 3 "~" H 8975 5500 50  0001 C CNN
 	1    8975 5500
 	1    0    0    -1  

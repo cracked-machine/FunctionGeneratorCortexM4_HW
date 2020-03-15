@@ -182,29 +182,23 @@ Text Label 6925 3500 0    50   ~ 0
 ADC_IN3
 Text Label 6900 3400 0    50   ~ 0
 COMP1_INP
-Text Label 2900 2575 2    50   ~ 0
+Text Label 5150 2700 2    50   ~ 0
 TIM2_TF1FP1
-Wire Wire Line
-	2425 2575 2900 2575
-Text HLabel 2500 1900 1    50   Input ~ 0
+Text HLabel 3225 1675 1    50   Input ~ 0
 3V3_VIN
 $Comp
 L power:GNDS #PWR0113
 U 1 1 5EA1E126
-P 2125 2975
-F 0 "#PWR0113" H 2125 2725 50  0001 C CNN
-F 1 "GNDS" H 2130 2802 50  0000 C CNN
-F 2 "" H 2125 2975 50  0001 C CNN
-F 3 "" H 2125 2975 50  0001 C CNN
-	1    2125 2975
+P 3225 3775
+F 0 "#PWR0113" H 3225 3525 50  0001 C CNN
+F 1 "GNDS" H 3230 3602 50  0000 C CNN
+F 2 "" H 3225 3775 50  0001 C CNN
+F 3 "" H 3225 3775 50  0001 C CNN
+	1    3225 3775
 	1    0    0    -1  
 $EndComp
-Text HLabel 1725 2575 0    50   Input ~ 0
+Text HLabel 1550 2700 0    50   Input ~ 0
 TRIG_IN
-Wire Wire Line
-	1825 2375 1400 2375
-Text Label 1400 2375 0    50   ~ 0
-CH1_MUX
 Text Notes 6850 3400 2    50   ~ 0
 Using Internal VREF
 Wire Wire Line
@@ -225,8 +219,6 @@ NoConn ~ 8125 4000
 NoConn ~ 8125 4200
 NoConn ~ 8125 4300
 NoConn ~ 8125 4800
-NoConn ~ 8125 5900
-NoConn ~ 8125 6000
 NoConn ~ 8125 6400
 NoConn ~ 9675 5100
 NoConn ~ 9675 4800
@@ -494,21 +486,8 @@ Text Notes 2725 7575 0    50   ~ 0
 6-pin SWD ICP Connector
 Text Notes 13350 6850 0    50   ~ 0
 TFT Front Panel Display Connector
-$Comp
-L SN74LVC1G3157:SN74LVC1G3157DCKR U2
-U 1 1 5E6F0364
-P 2125 2475
-F 0 "U2" H 1825 3100 50  0000 C CNN
-F 1 "SN74LVC1G3157DCKR" H 1825 3000 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering" H 1925 2175 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/sn74lvc1g3157.pdf" H 2225 2675 50  0001 C CNN
-	1    2125 2475
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	2125 2975 2125 2775
-Wire Wire Line
-	1725 2575 1825 2575
+	1550 2700 2875 2700
 Wire Wire Line
 	7200 6300 8125 6300
 Wire Wire Line
@@ -572,19 +551,11 @@ GPIO_EXTI0
 Text Notes 6650 7300 0    50   ~ 0
 GPIO_EXTI1
 Wire Wire Line
-	3000 2475 3550 2475
-Wire Wire Line
-	3000 2275 3550 2275
-Wire Wire Line
 	6925 3300 8125 3300
 Wire Wire Line
 	6925 3600 8125 3600
 Text Label 6925 3600 0    50   ~ 0
 DCBIAS_INVERT
-Text Label 7175 5400 0    50   ~ 0
-CH1_MUX
-Wire Wire Line
-	7175 5400 8125 5400
 Text Notes 6900 6100 0    50   ~ 0
 SPI3
 Text Notes 6900 6300 0    50   ~ 0
@@ -596,65 +567,79 @@ NoConn ~ 8125 5800
 NoConn ~ 8125 4400
 NoConn ~ 8125 4500
 NoConn ~ 8125 4100
-Text Label 3000 2275 0    50   ~ 0
+Text Label 5150 2900 2    50   ~ 0
 ADC_IN3
-Text Label 3000 2475 0    50   ~ 0
+Text Label 5150 2800 2    50   ~ 0
 COMP1_INP
-$Comp
-L Connector_Generic:Conn_01x03 J5
-U 1 1 5EDBA649
-P 3850 2375
-F 0 "J5" H 4050 2425 50  0000 R CNN
-F 1 "Conn_01x03" H 4400 2325 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3850 2375 50  0001 C CNN
-F 3 "~" H 3850 2375 50  0001 C CNN
-	1    3850 2375
-	1    0    0    -1  
-$EndComp
 Text Notes 6175 3600 0    50   ~ 0
 GPIO_OUTPUT
-Wire Wire Line
-	3550 2125 3550 2275
-Connection ~ 3550 2275
-Wire Wire Line
-	3550 2275 3650 2275
-Wire Wire Line
-	2425 2375 3650 2375
 $Comp
-L Connector:TestPoint TP?
-U 1 1 5F13C7D1
-P 3550 2625
-AR Path="/5E5FDE87/5F13C7D1" Ref="TP?"  Part="1" 
-AR Path="/5E5FDD07/5F13C7D1" Ref="TP15"  Part="1" 
-F 0 "TP15" H 3608 2697 50  0000 L CNN
-F 1 "TestPoint" H 3608 2652 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 3750 2625 50  0001 C CNN
-F 3 "~" H 3750 2625 50  0001 C CNN
-	1    3550 2625
-	-1   0    0    1   
+L TS5A3357:TS5A3357 U2
+U 1 1 5EA3BED8
+P 3225 2850
+F 0 "U2" H 2925 3475 50  0000 C CNN
+F 1 "TS5A3357" H 2950 3400 50  0000 C CNN
+F 2 "Package_SO:VSSOP-8_2.4x2.1mm_P0.5mm" H 3175 2850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ts5a3357.pdf" H 3175 2850 50  0001 C CNN
+	1    3225 2850
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3550 2625 3550 2475
-Connection ~ 3550 2475
+	8125 5900 7200 5900
 Wire Wire Line
-	3550 2475 3650 2475
+	8125 6000 7200 6000
+Text Label 7200 5900 0    50   ~ 0
+TRIGMUX1
+Text Label 7200 6000 0    50   ~ 0
+TRIGMUX2
+Text Label 1675 2800 0    50   ~ 0
+TRIGMUX1
+Text Label 1675 2900 0    50   ~ 0
+TRIGMUX2
+NoConn ~ 8125 5400
 Wire Wire Line
-	2500 1900 2500 2125
+	1675 2900 2875 2900
 Wire Wire Line
-	2500 2125 2125 2125
+	1675 2800 2875 2800
 Wire Wire Line
-	2125 2125 2125 2175
+	3225 3250 3225 3775
+Wire Wire Line
+	3225 1800 3225 2350
+Wire Wire Line
+	3225 1675 3225 1800
+Connection ~ 3225 1800
+Wire Wire Line
+	2475 1800 3225 1800
 $Comp
-L Connector:TestPoint TP?
-U 1 1 5F0F3AA1
-P 3550 2125
-AR Path="/5E5FDE87/5F0F3AA1" Ref="TP?"  Part="1" 
-AR Path="/5E5FDD07/5F0F3AA1" Ref="TP14"  Part="1" 
-F 0 "TP14" H 3608 2197 50  0000 L CNN
-F 1 "TestPoint" H 3608 2152 50  0001 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 3750 2125 50  0001 C CNN
-F 3 "~" H 3750 2125 50  0001 C CNN
-	1    3550 2125
-	-1   0    0    -1  
+L power:GNDS #PWR0127
+U 1 1 5EB41EE5
+P 2475 2300
+F 0 "#PWR0127" H 2475 2050 50  0001 C CNN
+F 1 "GNDS" H 2480 2127 50  0000 C CNN
+F 2 "" H 2475 2300 50  0001 C CNN
+F 3 "" H 2475 2300 50  0001 C CNN
+	1    2475 2300
+	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2475 1850 2475 1800
+Wire Wire Line
+	2475 2300 2475 2150
+$Comp
+L Device:C C40
+U 1 1 5EB3A3E6
+P 2475 2000
+F 0 "C40" H 2590 2046 50  0000 L CNN
+F 1 "100nF" H 2590 1955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2513 1850 50  0001 C CNN
+F 3 "~" H 2475 2000 50  0001 C CNN
+	1    2475 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3575 2700 5150 2700
+Wire Wire Line
+	3575 2800 5150 2800
+Wire Wire Line
+	3575 2900 5150 2900
 $EndSCHEMATC

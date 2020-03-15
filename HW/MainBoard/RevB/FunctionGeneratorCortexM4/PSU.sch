@@ -758,21 +758,6 @@ F 3 "~" H 1275 4475 50  0001 C CNN
 	1    1275 4475
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Jumper_NO_Small JP2
-U 1 1 5E9D48CF
-P 1425 4025
-F 0 "JP2" H 1425 4100 50  0000 C CNN
-F 1 "~SHDN" H 1425 3925 50  0000 C CNN
-F 2 "" H 1425 4025 50  0001 C CNN
-F 3 "~" H 1425 4025 50  0001 C CNN
-	1    1425 4025
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1525 4025 1600 4025
-Wire Wire Line
-	1325 4025 1275 4025
 Connection ~ 1275 4025
 Wire Wire Line
 	1275 4025 1275 3625
@@ -872,21 +857,6 @@ F 3 "~" H 1000 6625 50  0001 C CNN
 	1    1000 6625
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:Jumper_NO_Small JP1
-U 1 1 5EBFBD08
-P 1150 6175
-F 0 "JP1" H 1150 6250 50  0000 C CNN
-F 1 "~SHDN" H 1150 6075 50  0000 C CNN
-F 2 "" H 1150 6175 50  0001 C CNN
-F 3 "~" H 1150 6175 50  0001 C CNN
-	1    1150 6175
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1250 6175 1600 6175
-Wire Wire Line
-	1050 6175 1000 6175
 Connection ~ 1000 6175
 Wire Wire Line
 	1000 6175 1000 5775
@@ -1130,7 +1100,7 @@ U 1 1 5E9AFAA1
 P 2900 1125
 F 0 "U8" H 2900 1367 50  0000 C CNN
 F 1 "LM1117-5.0" H 2900 1276 50  0000 C CNN
-F 2 "" H 2900 1125 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 2900 1125 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 2900 1125 50  0001 C CNN
 	1    2900 1125
 	1    0    0    -1  
@@ -1150,7 +1120,7 @@ AR Path="/5E5FDE87/5ECB2BBB" Ref="U10"  Part="1"
 AR Path="/5EBB9B06/5ECB2BBB" Ref="U?"  Part="1" 
 F 0 "U10" V 9800 1500 50  0000 C CNN
 F 1 "TL431DBZ" V 9700 1450 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 9900 1550 50  0001 C CIN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9775 1850 50  0000 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/tl431.pdf" H 9900 1700 50  0001 C CIN
 	1    9900 1700
 	0    -1   -1   0   
@@ -1232,11 +1202,10 @@ Wire Wire Line
 Connection ~ 9900 1275
 Wire Wire Line
 	9900 1275 9900 1600
-Connection ~ 9250 1275
 Wire Wire Line
-	9250 1275 8675 1275
+	8650 1275 8200 1275
 Wire Wire Line
-	10450 1275 9900 1275
+	10450 1275 10275 1275
 $Comp
 L power:GNDS #PWR0111
 U 1 1 5EE41A3C
@@ -1292,8 +1261,44 @@ Wire Wire Line
 	10200 5300 10200 5400
 Text HLabel 10450 1275 2    50   Input ~ 0
 +2.5V
-Text Label 8675 1275 0    50   ~ 0
+Text Label 8200 1275 0    50   ~ 0
 5V_POL
 Text Notes 2750 825  0    50   ~ 0
 Max Vin: 15V
+$Comp
+L Device:R R?
+U 1 1 5E71CB53
+P 8800 1275
+AR Path="/5EBB9B06/5E71CB53" Ref="R?"  Part="1" 
+AR Path="/5E5FDE87/5E71CB53" Ref="R22"  Part="1" 
+F 0 "R22" V 8700 1225 50  0000 L CNN
+F 1 "1K" V 8900 1225 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 8730 1275 50  0001 C CNN
+F 3 "~" H 8800 1275 50  0001 C CNN
+	1    8800 1275
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8950 1275 9250 1275
+Connection ~ 9250 1275
+$Comp
+L power:PWR_FLAG #FLG0106
+U 1 1 5E73950B
+P 10275 1100
+F 0 "#FLG0106" H 10275 1175 50  0001 C CNN
+F 1 "PWR_FLAG" H 10275 1273 50  0001 C CNN
+F 2 "" H 10275 1100 50  0001 C CNN
+F 3 "~" H 10275 1100 50  0001 C CNN
+	1    10275 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10275 1100 10275 1275
+Connection ~ 10275 1275
+Wire Wire Line
+	10275 1275 9900 1275
+Wire Wire Line
+	1000 6175 1600 6175
+Wire Wire Line
+	1275 4025 1600 4025
 $EndSCHEMATC

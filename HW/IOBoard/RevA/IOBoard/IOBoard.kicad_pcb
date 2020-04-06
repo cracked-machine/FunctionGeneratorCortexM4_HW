@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew 5.1.5-52549c5~84~ubuntu18.04.1)
+(kicad_pcb (version 20171130) (host pcbnew 5.1.5-52549c5~86~ubuntu18.04.1)
 
   (general
     (thickness 1.6)
@@ -300,8 +300,8 @@
     )
   )
 
-  (gr_circle (center 137.668 20.32) (end 138.938 20.447) (layer B.Cu) (width 0.5) (tstamp 5E868FF3))
   (gr_circle (center 147.828 30.48) (end 149.098 30.5435) (layer B.Cu) (width 0.5) (tstamp 5E868FF3))
+  (gr_circle (center 137.668 20.32) (end 138.938 20.447) (layer B.Cu) (width 0.5) (tstamp 5E868FF3))
   (gr_circle (center 137.922 40.386) (end 139.192 40.386) (layer B.Cu) (width 0.5) (tstamp 5E868FF3))
   (gr_circle (center 148.082 50.546) (end 149.352 50.6095) (layer B.Cu) (width 0.5) (tstamp 5E868FF3))
   (gr_circle (center 147.828 70.612) (end 148.844 70.612) (layer B.Cu) (width 0.5) (tstamp 5E868FF3))

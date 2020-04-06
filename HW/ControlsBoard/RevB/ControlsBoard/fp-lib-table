@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name 12x12x7_3mmTactilePushButtonMomentary)(type KiCad)(uri ${KIPRJMOD}/../../../../../KicadLibrary/footprint/SWITCHES/TACTILE/12x12x7_3mmTactilePushButtonMomentary.pretty)(options "")(descr ""))
+)

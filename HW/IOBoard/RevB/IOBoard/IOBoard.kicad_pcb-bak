@@ -301,7 +301,7 @@
     )
   )
 
-  (gr_text "Mirrored = False" (at 138.8364 15.6464) (layer F.SilkS)
+  (gr_text "Mirrored = True" (at 138.8364 15.6464) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
   )
   (gr_circle (center 139.6365 72.263) (end 141.1605 72.263) (layer F.Cu) (width 1) (tstamp 5E87972B))

@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name TRN_SIP6)(type KiCad)(uri ${KIPRJMOD}/../../../../../KicadLibrary/footprint/PWR/DC-DC/ISOLATED/TRN_SIP6.pretty)(options "")(descr ""))
+)

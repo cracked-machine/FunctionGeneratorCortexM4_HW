@@ -7,4 +7,5 @@
   (lib (name TPS6040x)(type Legacy)(uri ${KIPRJMOD}/../../../../../KicadLibrary/symbol/PWR/DC-DC/CHARGEPUMP/TPS6040x.lib)(options "")(descr ""))
   (lib (name TS5A3357)(type Legacy)(uri ${KIPRJMOD}/../../../../../KicadLibrary/symbol/LOGIC/TS5A3357.lib)(options "")(descr ""))
   (lib (name FunctionGeneratorCortexM4-rescue)(type Legacy)(uri ${KIPRJMOD}/FunctionGeneratorCortexM4-rescue.lib)(options "")(descr ""))
+  (lib (name TracoTRN1)(type Legacy)(uri ${KIPRJMOD}/../../../../../KicadLibrary/symbol/PWR/DC-DC/ISOLATED/TracoTRN1.lib)(options "")(descr ""))
 )

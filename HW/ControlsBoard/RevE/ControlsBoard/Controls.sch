@@ -1,0 +1,424 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	3400 1475 3800 1475
+Wire Wire Line
+	3400 2700 3800 2700
+Wire Wire Line
+	3400 4025 3800 4025
+Wire Wire Line
+	3400 5225 3800 5225
+$Comp
+L power:GNDS #PWR?
+U 1 1 5E7E5394
+P 3800 1575
+AR Path="/5E7E5394" Ref="#PWR?"  Part="1" 
+AR Path="/5E7DD958/5E7E5394" Ref="#PWR06"  Part="1" 
+AR Path="/5E7E6C1D/5E7E5394" Ref="#PWR02"  Part="1" 
+F 0 "#PWR02" H 3800 1325 50  0001 C CNN
+F 1 "GNDS" H 3805 1402 50  0000 C CNN
+F 2 "" H 3800 1575 50  0001 C CNN
+F 3 "" H 3800 1575 50  0001 C CNN
+	1    3800 1575
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 1575 3800 1475
+$Comp
+L power:GNDS #PWR?
+U 1 1 5E7E539B
+P 3800 2800
+AR Path="/5E7E539B" Ref="#PWR?"  Part="1" 
+AR Path="/5E7DD958/5E7E539B" Ref="#PWR08"  Part="1" 
+AR Path="/5E7E6C1D/5E7E539B" Ref="#PWR04"  Part="1" 
+F 0 "#PWR04" H 3800 2550 50  0001 C CNN
+F 1 "GNDS" H 3805 2627 50  0000 C CNN
+F 2 "" H 3800 2800 50  0001 C CNN
+F 3 "" H 3800 2800 50  0001 C CNN
+	1    3800 2800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 2800 3800 2700
+$Comp
+L power:GNDS #PWR?
+U 1 1 5E7E53A2
+P 3800 4125
+AR Path="/5E7E53A2" Ref="#PWR?"  Part="1" 
+AR Path="/5E7DD958/5E7E53A2" Ref="#PWR010"  Part="1" 
+AR Path="/5E7E6C1D/5E7E53A2" Ref="#PWR06"  Part="1" 
+F 0 "#PWR06" H 3800 3875 50  0001 C CNN
+F 1 "GNDS" H 3805 3952 50  0000 C CNN
+F 2 "" H 3800 4125 50  0001 C CNN
+F 3 "" H 3800 4125 50  0001 C CNN
+	1    3800 4125
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 4125 3800 4025
+$Comp
+L power:GNDS #PWR?
+U 1 1 5E7E53A9
+P 3800 5325
+AR Path="/5E7E53A9" Ref="#PWR?"  Part="1" 
+AR Path="/5E7DD958/5E7E53A9" Ref="#PWR012"  Part="1" 
+AR Path="/5E7E6C1D/5E7E53A9" Ref="#PWR08"  Part="1" 
+F 0 "#PWR08" H 3800 5075 50  0001 C CNN
+F 1 "GNDS" H 3805 5152 50  0000 C CNN
+F 2 "" H 3800 5325 50  0001 C CNN
+F 3 "" H 3800 5325 50  0001 C CNN
+	1    3800 5325
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 5325 3800 5225
+$Comp
+L Device:Rotary_Encoder_Switch SW?
+U 1 1 5E7E53B0
+P 5825 4100
+AR Path="/5E7E53B0" Ref="SW?"  Part="1" 
+AR Path="/5E7DD958/5E7E53B0" Ref="SW1"  Part="1" 
+AR Path="/5E7E6C1D/5E7E53B0" Ref="SW1"  Part="1" 
+F 0 "SW1" V 5825 4950 50  0000 L CNN
+F 1 "Rotary_Encoder_Switch" V 5925 4750 50  0000 L CNN
+F 2 "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm" H 5675 4260 50  0001 C CNN
+F 3 "~" H 5825 4360 50  0001 C CNN
+	1    5825 4100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5825 4400 5825 5100
+$Comp
+L power:GNDS #PWR?
+U 1 1 5E7E53B7
+P 5825 5100
+AR Path="/5E7E53B7" Ref="#PWR?"  Part="1" 
+AR Path="/5E7DD958/5E7E53B7" Ref="#PWR014"  Part="1" 
+AR Path="/5E7E6C1D/5E7E53B7" Ref="#PWR010"  Part="1" 
+F 0 "#PWR010" H 5825 4850 50  0001 C CNN
+F 1 "GNDS" H 5830 4927 50  0000 C CNN
+F 2 "" H 5825 5100 50  0001 C CNN
+F 3 "" H 5825 5100 50  0001 C CNN
+	1    5825 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5925 4400 5925 4750
+Wire Wire Line
+	5925 4750 6625 4750
+Wire Wire Line
+	6625 4750 6625 4350
+Wire Wire Line
+	5725 4400 5725 4750
+Wire Wire Line
+	5725 4750 5075 4750
+Wire Wire Line
+	5075 4750 5075 4350
+$Comp
+L Device:R R?
+U 1 1 5E7E53C3
+P 5075 4200
+AR Path="/5E7E53C3" Ref="R?"  Part="1" 
+AR Path="/5E7DD958/5E7E53C3" Ref="R5"  Part="1" 
+AR Path="/5E7E6C1D/5E7E53C3" Ref="R5"  Part="1" 
+F 0 "R5" H 5145 4246 50  0000 L CNN
+F 1 "10K" H 5145 4155 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5005 4200 50  0001 C CNN
+F 3 "~" H 5075 4200 50  0001 C CNN
+	1    5075 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E7E53C9
+P 6625 4200
+AR Path="/5E7E53C9" Ref="R?"  Part="1" 
+AR Path="/5E7DD958/5E7E53C9" Ref="R7"  Part="1" 
+AR Path="/5E7E6C1D/5E7E53C9" Ref="R7"  Part="1" 
+F 0 "R7" H 6695 4246 50  0000 L CNN
+F 1 "10K" H 6695 4155 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6555 4200 50  0001 C CNN
+F 3 "~" H 6625 4200 50  0001 C CNN
+	1    6625 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6625 4050 6625 3025
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E7E53D0
+P 6625 2800
+AR Path="/5E7E53D0" Ref="#PWR?"  Part="1" 
+AR Path="/5E7DD958/5E7E53D0" Ref="#PWR016"  Part="1" 
+AR Path="/5E7E6C1D/5E7E53D0" Ref="#PWR012"  Part="1" 
+F 0 "#PWR012" H 6625 2650 50  0001 C CNN
+F 1 "+3V3" H 6640 2973 50  0000 C CNN
+F 2 "" H 6625 2800 50  0001 C CNN
+F 3 "" H 6625 2800 50  0001 C CNN
+	1    6625 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E7E53D7
+P 5075 2800
+AR Path="/5E7E53D7" Ref="#PWR?"  Part="1" 
+AR Path="/5E7DD958/5E7E53D7" Ref="#PWR013"  Part="1" 
+AR Path="/5E7E6C1D/5E7E53D7" Ref="#PWR09"  Part="1" 
+F 0 "#PWR09" H 5075 2650 50  0001 C CNN
+F 1 "+3V3" H 5090 2973 50  0000 C CNN
+F 2 "" H 5075 2800 50  0001 C CNN
+F 3 "" H 5075 2800 50  0001 C CNN
+	1    5075 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6625 4750 6925 4750
+Connection ~ 6625 4750
+Text Label 6925 4750 2    50   ~ 0
+ENC_B
+Wire Wire Line
+	5075 4750 4775 4750
+Connection ~ 5075 4750
+Text Label 4775 4750 0    50   ~ 0
+ENC_A
+Wire Wire Line
+	5925 3800 5925 3250
+Wire Wire Line
+	5925 3250 6125 3250
+Wire Wire Line
+	6125 3250 6125 3450
+$Comp
+L power:GNDS #PWR?
+U 1 1 5E7E53EF
+P 6125 3450
+AR Path="/5E7E53EF" Ref="#PWR?"  Part="1" 
+AR Path="/5E7DD958/5E7E53EF" Ref="#PWR015"  Part="1" 
+AR Path="/5E7E6C1D/5E7E53EF" Ref="#PWR011"  Part="1" 
+F 0 "#PWR011" H 6125 3200 50  0001 C CNN
+F 1 "GNDS" H 6130 3277 50  0000 C CNN
+F 2 "" H 6125 3450 50  0001 C CNN
+F 3 "" H 6125 3450 50  0001 C CNN
+	1    6125 3450
+	1    0    0    -1  
+$EndComp
+Text Label 5725 3250 2    50   ~ 0
+ENC_SW
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J1
+U 1 1 5E8132DF
+P 9025 3650
+F 0 "J1" H 9075 4067 50  0000 C CNN
+F 1 "Conn_02x06_Odd_Even" H 9075 3976 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x06_P2.54mm_Vertical_SMD" H 9025 3650 50  0001 C CNN
+F 3 "~" H 9025 3650 50  0001 C CNN
+	1    9025 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8825 3450 8125 3450
+Wire Wire Line
+	8125 3450 8125 3075
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E81FCB0
+P 8125 3075
+AR Path="/5E81FCB0" Ref="#PWR?"  Part="1" 
+AR Path="/5E7DD958/5E81FCB0" Ref="#PWR?"  Part="1" 
+AR Path="/5E7E6C1D/5E81FCB0" Ref="#PWR0101"  Part="1" 
+F 0 "#PWR0101" H 8125 2925 50  0001 C CNN
+F 1 "+3V3" H 8140 3248 50  0000 C CNN
+F 2 "" H 8125 3075 50  0001 C CNN
+F 3 "" H 8125 3075 50  0001 C CNN
+	1    8125 3075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9325 3450 9925 3450
+Wire Wire Line
+	9925 3450 9925 3050
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5E820942
+P 9925 3050
+AR Path="/5E820942" Ref="#PWR?"  Part="1" 
+AR Path="/5E7DD958/5E820942" Ref="#PWR?"  Part="1" 
+AR Path="/5E7E6C1D/5E820942" Ref="#PWR0102"  Part="1" 
+F 0 "#PWR0102" H 9925 2900 50  0001 C CNN
+F 1 "+3V3" H 9940 3223 50  0000 C CNN
+F 2 "" H 9925 3050 50  0001 C CNN
+F 3 "" H 9925 3050 50  0001 C CNN
+	1    9925 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8825 3550 7700 3550
+Wire Wire Line
+	8825 3750 8250 3750
+Wire Wire Line
+	8825 3850 8250 3850
+Wire Wire Line
+	9900 3950 9325 3950
+Wire Wire Line
+	9900 3750 9325 3750
+Wire Wire Line
+	9900 3850 9325 3850
+Wire Wire Line
+	9900 3550 9325 3550
+Wire Wire Line
+	9900 3650 9325 3650
+Text Label 7700 3550 0    50   ~ 0
+ENC_SW
+Text Label 8250 3750 0    50   ~ 0
+ENC_B
+Text Label 8250 3850 0    50   ~ 0
+ENC_A
+Text Label 9900 3550 2    50   ~ 0
+BTN1
+Text Label 9900 3650 2    50   ~ 0
+BTN2
+Text Label 9900 3750 2    50   ~ 0
+BTN3
+Text Label 9900 3850 2    50   ~ 0
+BTN4
+$Comp
+L power:GNDS #PWR0103
+U 1 1 5E828455
+P 9900 4125
+F 0 "#PWR0103" H 9900 3875 50  0001 C CNN
+F 1 "GNDS" H 9905 3952 50  0000 C CNN
+F 2 "" H 9900 4125 50  0001 C CNN
+F 3 "" H 9900 4125 50  0001 C CNN
+	1    9900 4125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9900 4125 9900 3950
+Wire Wire Line
+	8125 3650 8125 3950
+Wire Wire Line
+	8125 3650 8825 3650
+Wire Wire Line
+	8125 3950 8825 3950
+Wire Wire Line
+	8125 3950 8125 4125
+Connection ~ 8125 3950
+$Comp
+L power:GNDS #PWR0104
+U 1 1 5E82B1A2
+P 8125 4125
+F 0 "#PWR0104" H 8125 3875 50  0001 C CNN
+F 1 "GNDS" H 8130 3952 50  0000 C CNN
+F 2 "" H 8125 4125 50  0001 C CNN
+F 3 "" H 8125 4125 50  0001 C CNN
+	1    8125 4125
+	1    0    0    -1  
+$EndComp
+Text Label 2200 1475 0    50   ~ 0
+BTN1
+Text Label 2200 2700 0    50   ~ 0
+BTN2
+Text Label 2200 4025 0    50   ~ 0
+BTN3
+Text Label 2200 5225 0    50   ~ 0
+BTN4
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5E835B7D
+P 3800 1475
+F 0 "#FLG0101" H 3800 1550 50  0001 C CNN
+F 1 "PWR_FLAG" V 3800 1602 50  0000 L CNN
+F 2 "" H 3800 1475 50  0001 C CNN
+F 3 "~" H 3800 1475 50  0001 C CNN
+	1    3800 1475
+	0    1    -1   0   
+$EndComp
+Connection ~ 3800 1475
+Wire Wire Line
+	2200 1475 3000 1475
+Wire Wire Line
+	2200 2700 3000 2700
+Wire Wire Line
+	2200 4025 3000 4025
+Wire Wire Line
+	2200 5225 3000 5225
+Wire Wire Line
+	5075 2800 5075 4050
+Wire Wire Line
+	5725 3250 5725 3800
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5E8AAEC1
+P 6975 2800
+F 0 "#FLG0102" H 6975 2875 50  0001 C CNN
+F 1 "PWR_FLAG" H 6975 2973 50  0001 C CNN
+F 2 "" H 6975 2800 50  0001 C CNN
+F 3 "~" H 6975 2800 50  0001 C CNN
+	1    6975 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6975 2800 6975 3025
+Wire Wire Line
+	6975 3025 6625 3025
+Connection ~ 6625 3025
+Wire Wire Line
+	6625 3025 6625 2800
+$Comp
+L Switch:SW_SPST SW2
+U 1 1 5EC27C1F
+P 3200 1475
+F 0 "SW2" H 3200 1710 50  0000 C CNN
+F 1 "SW_SPST" H 3200 1619 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 3200 1475 50  0001 C CNN
+F 3 "~" H 3200 1475 50  0001 C CNN
+	1    3200 1475
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW3
+U 1 1 5EC2D713
+P 3200 2700
+F 0 "SW3" H 3200 2935 50  0000 C CNN
+F 1 "SW_SPST" H 3200 2844 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 3200 2700 50  0001 C CNN
+F 3 "~" H 3200 2700 50  0001 C CNN
+	1    3200 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW4
+U 1 1 5EC30009
+P 3200 4025
+F 0 "SW4" H 3200 4260 50  0000 C CNN
+F 1 "SW_SPST" H 3200 4169 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 3200 4025 50  0001 C CNN
+F 3 "~" H 3200 4025 50  0001 C CNN
+	1    3200 4025
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW5
+U 1 1 5EC3495E
+P 3200 5225
+F 0 "SW5" H 3200 5460 50  0000 C CNN
+F 1 "SW_SPST" H 3200 5369 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 3200 5225 50  0001 C CNN
+F 3 "~" H 3200 5225 50  0001 C CNN
+	1    3200 5225
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

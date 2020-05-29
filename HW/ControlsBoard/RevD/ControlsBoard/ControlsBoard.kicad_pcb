@@ -10,6 +10,11 @@
   )
 
   (page A4)
+  (title_block
+    (date 2020-05-29)
+    (rev D)
+  )
+
   (layers
     (0 F.Cu signal)
     (31 B.Cu signal)

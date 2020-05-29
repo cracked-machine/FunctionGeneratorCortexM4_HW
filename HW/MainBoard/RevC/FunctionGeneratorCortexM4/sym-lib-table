@@ -8,4 +8,5 @@
   (lib (name TS5A3357)(type Legacy)(uri ${KIPRJMOD}/../../../../../KicadLibrary/symbol/LOGIC/TS5A3357.lib)(options "")(descr ""))
   (lib (name FunctionGeneratorCortexM4-rescue)(type Legacy)(uri ${KIPRJMOD}/FunctionGeneratorCortexM4-rescue.lib)(options "")(descr ""))
   (lib (name TracoTRN1)(type Legacy)(uri ${KIPRJMOD}/../../../../../KicadLibrary/symbol/PWR/DC-DC/ISOLATED/TracoTRN1.lib)(options "")(descr ""))
+  (lib (name DG470)(type Legacy)(uri ${KIPRJMOD}/../../../../../KicadLibrary/symbol/LOGIC/DG470.lib)(options "")(descr ""))
 )

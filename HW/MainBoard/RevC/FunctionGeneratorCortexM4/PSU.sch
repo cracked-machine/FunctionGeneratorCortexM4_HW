@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 4 4
+Sheet 4 5
 Title "Power Supply"
 Date "2020-03-04"
 Rev "A"
@@ -1041,7 +1041,7 @@ Text HLabel 14675 6725 2    50   Input ~ 0
 Text Label 13825 6725 2    50   ~ 0
 +12V
 Wire Wire Line
-	13825 6075 14675 6075
+	13825 6075 14350 6075
 Text Label 13825 6075 2    50   ~ 0
 COM
 Text HLabel 14675 6075 2    50   Input ~ 0
@@ -1087,4 +1087,20 @@ Wire Wire Line
 Connection ~ 4650 4450
 Wire Wire Line
 	4650 4450 5725 4450
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5F988E4B
+P 14350 5900
+F 0 "#FLG0102" H 14350 5975 50  0001 C CNN
+F 1 "PWR_FLAG" H 14350 6073 50  0001 C CNN
+F 2 "" H 14350 5900 50  0001 C CNN
+F 3 "~" H 14350 5900 50  0001 C CNN
+	1    14350 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14350 5900 14350 6075
+Connection ~ 14350 6075
+Wire Wire Line
+	14350 6075 14675 6075
 $EndSCHEMATC

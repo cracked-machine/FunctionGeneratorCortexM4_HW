@@ -4,9 +4,9 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 5 5
-Title ""
-Date ""
-Rev ""
+Title "Analog Input"
+Date "2020-05-29"
+Rev "C"
 Comp ""
 Comment1 ""
 Comment2 ""

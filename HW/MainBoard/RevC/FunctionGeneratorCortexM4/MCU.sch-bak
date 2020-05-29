@@ -5,8 +5,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 2 5
 Title "Microcontroller"
-Date "2020-03-04"
-Rev "A"
+Date "2020-05-29"
+Rev "C"
 Comp ""
 Comment1 ""
 Comment2 ""

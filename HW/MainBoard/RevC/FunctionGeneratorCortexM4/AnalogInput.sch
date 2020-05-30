@@ -87,11 +87,11 @@ F 3 "~" H 8200 4300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9300 5000 10450 5000
+	9300 5000 10375 5000
 Wire Wire Line
-	9300 5100 10450 5100
+	9300 5100 10650 5100
 Wire Wire Line
-	9300 5200 10450 5200
+	9300 5200 10950 5200
 $Comp
 L PGA:THS7001 U?
 U 1 1 5F7C24B1
@@ -197,12 +197,12 @@ Connection ~ 7025 9325
 Text HLabel 7025 7975 1    50   Input ~ 0
 +12V
 Wire Wire Line
-	7025 7975 7025 8325
-Text HLabel 10450 5000 2    50   Input ~ 0
+	7025 7975 7025 8125
+Text HLabel 11925 5000 2    50   Input ~ 0
 TIM2_TF1FP1
-Text HLabel 10450 5100 2    50   Input ~ 0
+Text HLabel 11925 5100 2    50   Input ~ 0
 COMP1_INP
-Text HLabel 10450 5200 2    50   Input ~ 0
+Text HLabel 11925 5200 2    50   Input ~ 0
 ADC_IN3
 Text HLabel 6700 5100 0    50   Input ~ 0
 TRIGMUX1
@@ -226,4 +226,140 @@ Text HLabel 6500 2625 0    50   Input ~ 0
 INPUT_GAIN_B
 Text HLabel 6500 2475 0    50   Input ~ 0
 INPUT_GAIN_C
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5ED55FC5
+P 10375 4850
+AR Path="/5E5FDE87/5ED55FC5" Ref="TP?"  Part="1" 
+AR Path="/5EBB9B06/5ED55FC5" Ref="TP?"  Part="1" 
+AR Path="/5F7BA71C/5ED55FC5" Ref="TP14"  Part="1" 
+F 0 "TP14" H 10433 4922 50  0000 L CNN
+F 1 "TestPoint" H 10433 4877 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 10575 4850 50  0001 C CNN
+F 3 "~" H 10575 4850 50  0001 C CNN
+	1    10375 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10375 4850 10375 5000
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5ED56AD4
+P 10650 4850
+AR Path="/5E5FDE87/5ED56AD4" Ref="TP?"  Part="1" 
+AR Path="/5EBB9B06/5ED56AD4" Ref="TP?"  Part="1" 
+AR Path="/5F7BA71C/5ED56AD4" Ref="TP15"  Part="1" 
+F 0 "TP15" H 10708 4922 50  0000 L CNN
+F 1 "TestPoint" H 10708 4877 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 10850 4850 50  0001 C CNN
+F 3 "~" H 10850 4850 50  0001 C CNN
+	1    10650 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10650 4850 10650 5100
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5ED58D1C
+P 10950 4850
+AR Path="/5E5FDE87/5ED58D1C" Ref="TP?"  Part="1" 
+AR Path="/5EBB9B06/5ED58D1C" Ref="TP?"  Part="1" 
+AR Path="/5F7BA71C/5ED58D1C" Ref="TP16"  Part="1" 
+F 0 "TP16" H 11008 4922 50  0000 L CNN
+F 1 "TestPoint" H 11008 4877 50  0001 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.0x1.0mm" H 11150 4850 50  0001 C CNN
+F 3 "~" H 11150 4850 50  0001 C CNN
+	1    10950 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10950 4850 10950 5200
+Connection ~ 10375 5000
+Connection ~ 10650 5100
+Connection ~ 10950 5200
+Wire Wire Line
+	10650 5100 11925 5100
+Wire Wire Line
+	10375 5000 11925 5000
+Wire Wire Line
+	10950 5200 11925 5200
+$Comp
+L Device:R R56
+U 1 1 5ED68604
+P 7500 8375
+F 0 "R56" H 7570 8421 50  0000 L CNN
+F 1 "R" H 7570 8330 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7430 8375 50  0001 C CNN
+F 3 "~" H 7500 8375 50  0001 C CNN
+	1    7500 8375
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R57
+U 1 1 5ED68A55
+P 7500 9250
+F 0 "R57" H 7570 9296 50  0000 L CNN
+F 1 "R" H 7570 9205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7430 9250 50  0001 C CNN
+F 3 "~" H 7500 9250 50  0001 C CNN
+	1    7500 9250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 8525 7500 8725
+Wire Wire Line
+	7500 8725 7025 8725
+Connection ~ 7025 8725
+Wire Wire Line
+	7500 8725 7500 9100
+Connection ~ 7500 8725
+Wire Wire Line
+	7500 9400 7500 10025
+Text HLabel 7500 10025 3    50   Input ~ 0
+COM
+Wire Wire Line
+	7500 8225 7500 8125
+Wire Wire Line
+	7500 8125 7025 8125
+Connection ~ 7025 8125
+Wire Wire Line
+	7025 8125 7025 8325
+$Comp
+L Device:R R58
+U 1 1 5ED6C89F
+P 8000 8375
+F 0 "R58" H 8070 8421 50  0000 L CNN
+F 1 "R" H 8070 8330 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7930 8375 50  0001 C CNN
+F 3 "~" H 8000 8375 50  0001 C CNN
+	1    8000 8375
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R59
+U 1 1 5ED6CB95
+P 8000 9250
+F 0 "R59" H 8070 9296 50  0000 L CNN
+F 1 "R" H 8070 9205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7930 9250 50  0001 C CNN
+F 3 "~" H 8000 9250 50  0001 C CNN
+	1    8000 9250
+	1    0    0    -1  
+$EndComp
+Text HLabel 8000 7975 1    50   Input ~ 0
+-12V
+Wire Wire Line
+	8000 7975 8000 8225
+Wire Wire Line
+	8000 8525 8000 8925
+Wire Wire Line
+	7025 8925 8000 8925
+Connection ~ 7025 8925
+Connection ~ 8000 8925
+Wire Wire Line
+	8000 8925 8000 9100
+Wire Wire Line
+	8000 9400 8000 10025
+Text HLabel 8000 10025 3    50   Input ~ 0
+COM
 $EndSCHEMATC

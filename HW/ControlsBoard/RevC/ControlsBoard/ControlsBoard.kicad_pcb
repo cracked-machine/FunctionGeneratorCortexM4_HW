@@ -1,8 +1,8 @@
-(kicad_pcb (version 20171130) (host pcbnew "(5.1.5-0-10_14)")
+(kicad_pcb (version 20171130) (host pcbnew 5.1.5-52549c5~86~ubuntu18.04.1)
 
   (general
     (thickness 1.6)
-    (drawings 4)
+    (drawings 8)
     (tracks 79)
     (zones 0)
     (modules 12)
@@ -643,6 +643,10 @@
     )
   )
 
+  (gr_circle (center 116.84 53.34) (end 118.543884 53.34) (layer F.Cu) (width 0.3) (tstamp 5ECD6E0B))
+  (gr_circle (center 116.84 68.58) (end 118.543884 68.58) (layer F.Cu) (width 0.3) (tstamp 5ECD6E0B))
+  (gr_circle (center 166.37 68.58) (end 168.073884 68.58) (layer F.Cu) (width 0.3) (tstamp 5ECD6E0B))
+  (gr_circle (center 166.37 53.34) (end 168.073884 53.34) (layer F.Cu) (width 0.3))
   (gr_line (start 114.3 71.12) (end 114.3 50.8) (layer Edge.Cuts) (width 0.05) (tstamp 5EC26295))
   (gr_line (start 168.91 71.12) (end 114.3 71.12) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 168.91 50.8) (end 168.91 71.12) (layer Edge.Cuts) (width 0.05))
@@ -728,7 +732,7 @@
   (segment (start 155.067 59.4725) (end 156.8815 59.4725) (width 1) (layer F.Cu) (net 9))
   (segment (start 156.8815 59.4725) (end 158.5595 59.4725) (width 1) (layer F.Cu) (net 9))
 
-  (zone (net 1) (net_name GNDS) (layer B.Cu) (tstamp 0) (hatch edge 0.508)
+  (zone (net 1) (net_name GNDS) (layer B.Cu) (tstamp 5ECD6DE7) (hatch edge 0.508)
     (connect_pads yes (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))

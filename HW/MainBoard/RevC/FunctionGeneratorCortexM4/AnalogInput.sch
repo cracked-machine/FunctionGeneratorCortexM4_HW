@@ -28,7 +28,7 @@ F 3 "" H 8950 6075 50  0001 C CNN
 	1    8950 6075
 	1    0    0    -1  
 $EndComp
-Text HLabel 3975 3525 0    50   Input ~ 0
+Text HLabel 3950 3550 0    50   Input ~ 0
 TRIG_IN
 $Comp
 L TS5A3357:TS5A3357 U?
@@ -119,7 +119,7 @@ F 3 "https://www.ti.com/lit/ds/slos214c/slos214c.pdf" H 6525 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3975 3525 5825 3550
+	3950 3550 4425 3550
 Wire Wire Line
 	7175 3650 7375 3650
 Wire Wire Line
@@ -361,5 +361,25 @@ Wire Wire Line
 Wire Wire Line
 	8000 9400 8000 10025
 Text HLabel 8000 10025 3    50   Input ~ 0
+COM
+$Comp
+L Device:D_TVS_ALT D?
+U 1 1 5ED70DB7
+P 4425 3925
+F 0 "D?" V 4379 4004 50  0000 L CNN
+F 1 "D_TVS_ALT" V 4470 4004 50  0000 L CNN
+F 2 "Diode_SMD:D_SMA_Handsoldering" H 4425 3925 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/datasheet/2/240/Littelfuse_TVS_Diode_P4SMA_Datasheet.pdf-540735.pdf" H 4425 3925 50  0001 C CNN
+	1    4425 3925
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4425 3775 4425 3550
+Connection ~ 4425 3550
+Wire Wire Line
+	4425 3550 5825 3550
+Wire Wire Line
+	4425 4075 4425 4500
+Text HLabel 4425 4500 3    50   Input ~ 0
 COM
 $EndSCHEMATC

@@ -189,17 +189,6 @@ Wire Wire Line
 	3575 8900 3575 8750
 Text Label 5500 8350 2    50   ~ 0
 DCBIAS
-$Comp
-L Amplifier_Operational:TL072 U12
-U 3 1 5E82E9FB
-P 4275 14450
-F 0 "U12" H 4233 14496 50  0000 L CNN
-F 1 "TL072" H 4233 14405 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4275 14450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 4275 14450 50  0001 C CNN
-	3    4275 14450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3950 8350 3575 8350
 Connection ~ 3575 8350
@@ -382,32 +371,10 @@ Wire Wire Line
 	11150 5700 11550 5700
 $Comp
 L Amplifier_Operational:TL072 U7
-U 1 1 5ED09902
-P 12800 5800
-F 0 "U7" H 12800 5433 50  0000 C CNN
-F 1 "TL072" H 12800 5524 50  0000 C CNN
-F 2 "" H 12800 5800 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 12800 5800 50  0001 C CNN
-	1    12800 5800
-	1    0    0    1   
-$EndComp
-$Comp
-L Amplifier_Operational:TL072 U7
-U 2 1 5ED0BA1A
-P 18575 5900
-F 0 "U7" H 18575 5533 50  0000 C CNN
-F 1 "TL072" H 18575 5624 50  0000 C CNN
-F 2 "" H 18575 5900 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 18575 5900 50  0001 C CNN
-	2    18575 5900
-	1    0    0    1   
-$EndComp
-$Comp
-L Amplifier_Operational:TL072 U7
 U 3 1 5ED10CAD
 P 2750 14450
 F 0 "U7" H 2708 14496 50  0000 L CNN
-F 1 "TL072" H 2708 14405 50  0000 L CNN
+F 1 "LM833" H 2708 14405 50  0000 L CNN
 F 2 "" H 2750 14450 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2750 14450 50  0001 C CNN
 	3    2750 14450
@@ -1357,40 +1324,6 @@ Wire Wire Line
 	20750 12500 20750 12825
 Text HLabel 20750 12825 3    50   Input ~ 0
 COM
-$Comp
-L Device:D_TVS D3
-U 1 1 5F6672E8
-P 21150 12350
-F 0 "D3" V 21104 12429 50  0000 L CNN
-F 1 "D_TVS" V 21195 12429 50  0000 L CNN
-F 2 "" H 21150 12350 50  0001 C CNN
-F 3 "~" H 21150 12350 50  0001 C CNN
-	1    21150 12350
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	21150 12200 21150 11750
-Wire Wire Line
-	21150 12500 21150 12825
-Text HLabel 21150 12825 3    50   Input ~ 0
-COM
-$Comp
-L Device:D_TVS D7
-U 1 1 5F696329
-P 21000 6500
-F 0 "D7" V 20954 6579 50  0000 L CNN
-F 1 "D_TVS" V 21045 6579 50  0000 L CNN
-F 2 "" H 21000 6500 50  0001 C CNN
-F 3 "~" H 21000 6500 50  0001 C CNN
-	1    21000 6500
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	21000 6350 21000 5900
-Wire Wire Line
-	21000 6650 21000 6975
-Text HLabel 21000 6975 3    50   Input ~ 0
-COM
 Text Notes 4775 1675 0    197  ~ 0
 DC OFFSET
 Text Notes 11025 1625 0    197  ~ 0
@@ -1714,22 +1647,12 @@ Wire Wire Line
 Connection ~ 20175 11750
 Wire Wire Line
 	19000 11750 20175 11750
-Connection ~ 21000 5900
-Wire Wire Line
-	21000 5900 21550 5900
 Wire Wire Line
 	20100 5900 20550 5900
 Connection ~ 20550 5900
-Wire Wire Line
-	20550 5900 21000 5900
 Connection ~ 20750 11750
-Connection ~ 21150 11750
-Wire Wire Line
-	21150 11750 21700 11750
 Wire Wire Line
 	20175 11750 20750 11750
-Wire Wire Line
-	20750 11750 21150 11750
 Text Notes 9875 4775 0    50   ~ 0
 ± 15 V analog signal range
 Text Notes 14050 4825 0    50   ~ 0
@@ -1794,4 +1717,83 @@ Wire Wire Line
 	7225 10150 6025 10150
 Wire Wire Line
 	6025 8350 6025 10150
+Wire Wire Line
+	20550 5900 21050 5900
+Connection ~ 21050 5900
+Wire Wire Line
+	21050 5900 21550 5900
+Wire Wire Line
+	20750 11750 21300 11750
+$Comp
+L Device:D_TVS_ALT D?
+U 1 1 5EDDE6AD
+P 21300 12350
+F 0 "D?" V 21254 12429 50  0000 L CNN
+F 1 "D_TVS_ALT" V 21345 12429 50  0000 L CNN
+F 2 "Diode_SMD:D_SMA_Handsoldering" H 21300 12350 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/datasheet/2/240/Littelfuse_TVS_Diode_P4SMA_Datasheet.pdf-540735.pdf" H 21300 12350 50  0001 C CNN
+	1    21300 12350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	21300 12200 21300 11750
+Wire Wire Line
+	21300 12500 21300 12825
+Text HLabel 21300 12825 3    50   Input ~ 0
+COM
+Connection ~ 21300 11750
+Wire Wire Line
+	21300 11750 21700 11750
+$Comp
+L Amplifier_Operational:TL072 U7
+U 1 1 5ED09902
+P 12800 5800
+F 0 "U7" H 12800 5433 50  0000 C CNN
+F 1 "TL072" H 12800 5524 50  0000 C CNN
+F 2 "" H 12800 5800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 12800 5800 50  0001 C CNN
+	1    12800 5800
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:TL072 U7
+U 2 1 5ED0BA1A
+P 18575 5900
+F 0 "U7" H 18575 5533 50  0000 C CNN
+F 1 "TL072" H 18575 5624 50  0000 C CNN
+F 2 "" H 18575 5900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 18575 5900 50  0001 C CNN
+	2    18575 5900
+	1    0    0    1   
+$EndComp
+$Comp
+L Amplifier_Operational:TL072 U12
+U 3 1 5E82E9FB
+P 4275 14450
+F 0 "U12" H 4233 14496 50  0000 L CNN
+F 1 "TL072" H 4233 14405 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4275 14450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 4275 14450 50  0001 C CNN
+	3    4275 14450
+	1    0    0    -1  
+$EndComp
+Text HLabel 21050 6850 3    50   Input ~ 0
+COM
+$Comp
+L Device:D_TVS_ALT D?
+U 1 1 5EDB6688
+P 21050 6350
+AR Path="/5F7BA71C/5EDB6688" Ref="D?"  Part="1" 
+AR Path="/5EBB9B06/5EDB6688" Ref="D?"  Part="1" 
+F 0 "D?" V 21004 6429 50  0000 L CNN
+F 1 "D_TVS_ALT" V 21095 6429 50  0000 L CNN
+F 2 "Diode_SMD:D_SMA_Handsoldering" H 21050 6350 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/datasheet/2/240/Littelfuse_TVS_Diode_P4SMA_Datasheet.pdf-540735.pdf" H 21050 6350 50  0001 C CNN
+	1    21050 6350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	21050 6200 21050 5900
+Wire Wire Line
+	21050 6500 21050 6850
 $EndSCHEMATC

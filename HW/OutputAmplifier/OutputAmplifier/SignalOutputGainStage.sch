@@ -1,0 +1,161 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Operational:THS3491xDDA U?
+U 1 1 5EE67B5C
+P 5050 2875
+F 0 "U?" H 4275 3300 50  0000 L CNN
+F 1 "THS3491xDDA" H 4100 3175 50  0000 L CNN
+F 2 "Package_SO:Texas_R-PDSO-G8_EP2.95x4.9mm_Mask2.4x3.1mm" H 5050 2275 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ths3491.pdf" H 5200 3025 50  0001 C CNN
+	1    5050 2875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 2575 4950 2550
+$Comp
+L power:+15V #PWR?
+U 1 1 5EE67B63
+P 4950 2500
+F 0 "#PWR?" H 4950 2350 50  0001 C CNN
+F 1 "+15V" H 4965 2673 50  0000 C CNN
+F 2 "" H 4950 2500 50  0001 C CNN
+F 3 "" H 4950 2500 50  0001 C CNN
+	1    4950 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3175 4950 3300
+$Comp
+L power:-15V #PWR?
+U 1 1 5EE67B6A
+P 4950 3300
+F 0 "#PWR?" H 4950 3400 50  0001 C CNN
+F 1 "-15V" H 4965 3473 50  0000 C CNN
+F 2 "" H 4950 3300 50  0001 C CNN
+F 3 "" H 4950 3300 50  0001 C CNN
+	1    4950 3300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4750 2775 3800 2775
+$Comp
+L Device:R R?
+U 1 1 5EE67B71
+P 5000 3900
+F 0 "R?" V 4793 3900 50  0000 C CNN
+F 1 "798R" V 4884 3900 50  0000 C CNN
+F 2 "" V 4930 3900 50  0001 C CNN
+F 3 "~" H 5000 3900 50  0001 C CNN
+	1    5000 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4750 2975 4475 2975
+Wire Wire Line
+	4475 2975 4475 3900
+Wire Wire Line
+	4475 3900 4850 3900
+Wire Wire Line
+	5350 2875 5600 2875
+Wire Wire Line
+	5600 2875 5600 3900
+Wire Wire Line
+	5600 3900 5150 3900
+$Comp
+L Device:R R?
+U 1 1 5EE67B7D
+P 4475 4350
+F 0 "R?" H 4405 4304 50  0000 R CNN
+F 1 "200R" H 4405 4395 50  0000 R CNN
+F 2 "" V 4405 4350 50  0001 C CNN
+F 3 "~" H 4475 4350 50  0001 C CNN
+	1    4475 4350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4475 4200 4475 3900
+Connection ~ 4475 3900
+Wire Wire Line
+	4475 4500 4475 4725
+$Comp
+L power:VCOM #PWR?
+U 1 1 5EE67B86
+P 4475 4725
+F 0 "#PWR?" H 4475 4575 50  0001 C CNN
+F 1 "VCOM" H 4493 4898 50  0000 C CNN
+F 2 "" H 4475 4725 50  0001 C CNN
+F 3 "" H 4475 4725 50  0001 C CNN
+	1    4475 4725
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5EE67B8C
+P 6075 2875
+F 0 "R?" V 5868 2875 50  0000 C CNN
+F 1 "50R" V 5959 2875 50  0000 C CNN
+F 2 "" V 6005 2875 50  0001 C CNN
+F 3 "~" H 6075 2875 50  0001 C CNN
+	1    6075 2875
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5925 2875 5600 2875
+Connection ~ 5600 2875
+Wire Wire Line
+	6225 2875 7550 2875
+Wire Wire Line
+	5050 2575 5050 2550
+Wire Wire Line
+	5050 2550 4950 2550
+Connection ~ 4950 2550
+Wire Wire Line
+	4950 2550 4950 2500
+$Comp
+L Device:R R?
+U 1 1 5EE67B99
+P 3800 3225
+F 0 "R?" H 3730 3179 50  0000 R CNN
+F 1 "50R" H 3730 3270 50  0000 R CNN
+F 2 "" V 3730 3225 50  0001 C CNN
+F 3 "~" H 3800 3225 50  0001 C CNN
+	1    3800 3225
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3800 3075 3800 2775
+Connection ~ 3800 2775
+Wire Wire Line
+	3800 2775 3425 2775
+Wire Wire Line
+	3800 3375 3800 3600
+$Comp
+L power:VCOM #PWR?
+U 1 1 5EE67BA3
+P 3800 3600
+F 0 "#PWR?" H 3800 3450 50  0001 C CNN
+F 1 "VCOM" H 3818 3773 50  0000 C CNN
+F 2 "" H 3800 3600 50  0001 C CNN
+F 3 "" H 3800 3600 50  0001 C CNN
+	1    3800 3600
+	-1   0    0    1   
+$EndComp
+Text HLabel 3425 2775 0    50   Input ~ 0
+SignalIn
+Text HLabel 7550 2875 2    50   Input ~ 0
+SignalOut
+$EndSCHEMATC

@@ -1,0 +1,80 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:D D?
+U 1 1 5EE79204
+P 6275 2900
+F 0 "D?" V 6229 2979 50  0000 L CNN
+F 1 "D" V 6320 2979 50  0000 L CNN
+F 2 "" H 6275 2900 50  0001 C CNN
+F 3 "~" H 6275 2900 50  0001 C CNN
+	1    6275 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5EE79AD4
+P 6075 3725
+F 0 "D?" V 6029 3804 50  0000 L CNN
+F 1 "D" V 6120 3804 50  0000 L CNN
+F 2 "" H 6075 3725 50  0001 C CNN
+F 3 "~" H 6075 3725 50  0001 C CNN
+	1    6075 3725
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7875 3325 6275 3325
+Wire Wire Line
+	6275 3050 6275 3325
+Connection ~ 6275 3325
+Wire Wire Line
+	6275 3325 6075 3325
+Wire Wire Line
+	6075 3575 6075 3325
+Connection ~ 6075 3325
+Wire Wire Line
+	6075 3325 4600 3325
+Wire Wire Line
+	6275 2750 6275 2425
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5EE7A0BA
+P 6275 2425
+F 0 "#PWR?" H 6275 2275 50  0001 C CNN
+F 1 "+3.3V" H 6290 2598 50  0000 C CNN
+F 2 "" H 6275 2425 50  0001 C CNN
+F 3 "" H 6275 2425 50  0001 C CNN
+	1    6275 2425
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDS #PWR?
+U 1 1 5EE7A416
+P 6075 4100
+F 0 "#PWR?" H 6075 3850 50  0001 C CNN
+F 1 "GNDS" H 6080 3927 50  0000 C CNN
+F 2 "" H 6075 4100 50  0001 C CNN
+F 3 "" H 6075 4100 50  0001 C CNN
+	1    6075 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6075 4100 6075 3875
+Text HLabel 7875 3325 2    50   Input ~ 0
+TRIGGER_IN
+Text HLabel 4600 3325 0    50   Input ~ 0
+TRIGGER_THRU
+$EndSCHEMATC

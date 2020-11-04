@@ -1,6 +1,9 @@
 ## Cortex M4-based Function Generator (Hardware)
 A function generator powered by STM32 G4.
 
+
+Required Kicad Hardware library: https://github.com/cracked-machine/KicadLibrary
+
 For details of the MCU configuration and firmware refer to [FunctionGeneratorCortexM4_SW](https://github.com/cracked-machine/FunctionGeneratorCortexM4_SW)
 
 ### System Overview

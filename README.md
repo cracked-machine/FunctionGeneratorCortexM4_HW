@@ -6,6 +6,8 @@ Required Kicad Hardware library: https://github.com/cracked-machine/KicadLibrary
 
 For details of the MCU configuration and firmware refer to [FunctionGeneratorCortexM4_SW](https://github.com/cracked-machine/FunctionGeneratorCortexM4_SW)
 
+Note, RevB was the final design. RevC was not built and is an untested future proposal. 
+
 ### System Overview
 
 Input signals can be used as a trigger, capturing on voltage level or edge detection.
